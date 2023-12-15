@@ -1,0 +1,3131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      The Survey, Volume 30, No. 24 | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* Heading Styles */
+    h1,h2,h3,h4 {
+    clear: both;
+    font-weight: bold;
+    page-break-before: avoid;}
+
+h1 { /* book title */
+      text-align: center;
+      text-indent: 0em;
+      margin: 2em 5% 1em;
+      font-size: 180%;}
+h2 { /* chapter headings */
+      text-align: center;
+      text-indent: 0;
+      margin: 1em 5% 1.5em;
+      font-size: 160%;}
+h3 { /* section headings */
+      text-align: center;
+      text-indent: 0em;
+      margin: 2em 5% 1em;
+      font-size: 140%;}
+h4 {  /* sub-headings */
+      text-align:left;
+      text-indent: 0;
+      margin: 2em 0 1em 0;
+      font-size: 120%;}
+
+.no-break {page-break-before: avoid;}
+.break {page-break-before: always;}
+
+div.chapter {page-break-before: always;
+             margin-top: 4em;}
+
+/* Paragraph styles */
+p {text-indent: 1.25em;
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;}
+
+.unindent {text-indent: 0em;
+            margin-top: .51em;
+            text-align: justify;
+            margin-bottom: .49em;}
+
+.p0 {margin-top: -.51em;}
+.p2 {margin-top: 2em;}
+.right {text-align: right;}
+.r4        { margin-right: 4em; }
+
+.center   {text-align: center;
+           text-indent: 0em;}
+
+.blockquot {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size: 95%;
+}
+
+/* Font styling */
+.smcap  {font-style: normal; font-variant: small-caps;}
+.allsmcap {font-variant: small-caps; text-transform: lowercase;}
+em {font-style: italic;}
+.small {font-size: 92%;}
+.smaller {font-size: 83%;}
+.larger {font-size: 120%;}
+.ls {letter-spacing: .25em;
+      margin-right: -0.25em;}
+.u {text-decoration: underline;} /* double underline is CSS3 not yet approved */
+.caption {page-break-before: avoid;
+          text-align: center;
+          font-size: 90%;
+          margin-left: .5em;
+          margin-right: .5em;}
+.captionleft {page-break-before: avoid;
+              text-align: left;
+              margin-right: .5em;
+              margin-left: 2em;
+              text-indent: -1.5em;
+              font-size: 90%;}
+.captionright {page-break-before: avoid;
+               text-align: right;
+               margin-right: .5em;
+               font-size: 90%;}
+
+span.lock {white-space: nowrap;} /* esp for keeping following mdashes with preceding word */
+
+abbr { border:none; text-decoration:none; font-variant:normal; }
+
+/* Links */
+a:visited {text-decoration:none; color: red;}
+a:link {text-decoration:none;} /* no UL of any links - html accessibility */
+
+p.drop-cap { /* for dropped caps without image */
+  text-indent: 0em;
+}
+p.drop-cap:first-letter
+{
+  float: left; 
+  margin: 0.15em 0.1em 0em 0em;
+  font-size: 250%;
+  line-height:0.85em;
+}
+.x-ebookmaker  p.drop-cap:first-letter
+{
+  float: none; 
+  margin: 0;
+  font-size: 100%;
+}
+
+/* Rules */
+hr { /*default rule across entire width */
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+  hr.short  {
+   margin-right:45%;
+   margin-left:45%;
+   text-align:center;
+   width:10%;
+  }
+
+hr.tb   {width: 45%; margin: 1em 27.5%;}
+
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+@media print { hr.chap {display: none; visibility: hidden;}}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figcenter {
+    margin: 1em auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 250px;
+    text-align: center; /* this aligns the illo, not text */
+}
+
+.figcenterwide {
+    margin: 1em auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+    text-align: center; /* this aligns the illo, not text */
+}
+
+.pagenum {
+  position: absolute;
+  right: .25em;
+  text-indent: 0;
+  text-align: right;
+  font-size: 70%;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #acacac;
+  border: .0625em solid #acacac;
+  background: #ffffff;
+  padding: .0625em .125em;
+}
+
+/* double lines above and below text; use within div */
+ .linebox  {border-top-style:double; border-top-width:thick;
+           border-bottom-style:double; border-bottom-width:thick;
+           max-width: 300px;
+           margin: 1em 25% 1em 25%;}
+/* double lines on left and right */
+ .lineboxrt {border-right-style:double; border-right-width:thick;}
+ .lineboxlf {border-left-style:double; border-left-width:thick;}
+
+/* Footnotes and Anchors */
+.footnote  {margin-left: 10%; margin-right: 10%; font-size: 0.9em; text-decoration: none; text-indent: 0;}
+
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Unordered Lists */
+ul { list-style-type: none; }
+li  {
+    margin-top: .5em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+
+.box   {border: solid .1em;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        padding-left: 2em;
+        padding-right: 2em;}
+
+.adbox   {border: solid .1em;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        padding-left: 2em;
+        padding-right: 2em;}
+
+    </style>
+ </head>
+<body>
+<div class="chapter">
+
+<h1>The Survey,<br>
+Volume 30, Number 24,<br>
+September 13, 1913</h1>
+
+<hr class="chap x-ebookmaker-drop">
+</div><!--end chapter-->
+
+<div class="chapter">
+<span class="pagenum" id="Page_705">705</span>
+<h2>
+THE COMMON WELFARE
+</h2>
+</div><!--end chapter header-->
+
+<h4>THE BINGHAMTON FIRE<br>
+AND ENCLOSED STAIRWAYS</h4>
+
+<p>After many conferences and two days of public
+hearings on the enclosure of factory stairways,
+following the Binghamton fire—and backed
+by the attorney-general’s opinion in regard to
+the scope of its powers—the industrial board of
+the New York Department of Labor has adopted
+rules and regulations for the enclosure of stairways
+in factories of four stories or under. On
+account of the vital importance of exits, their
+rules are quoted in full:</p>
+
+<div class="blockquot">
+
+<p>Regulation <abbr title="Number">No.</abbr> 1. In all factory buildings
+less than five stories in height in which more
+than twenty-five persons are employed above
+the ground floor, or in which, regardless of
+the number of persons employed, articles,
+goods, wares, merchandise or products of
+combustible material are stored, packed,
+manufactured or in the process of manufacture,
+all interior stairways serving as required
+means of exit, and the landings, platforms,
+and passageways connected therewith,
+shall be enclosed on all sides by partitions
+of fire-resisting material extending
+continuously from the basement. Where the
+stairway extends to the top floor of the
+building such partitions shall extend to three
+feet above the roof. All openings in such
+partitions shall be provided with self-closing
+doors constructed of fire-resisting material,
+except where such openings are in the exterior
+wall of the building. The bottom of
+the enclosure shall be of fireproof material
+at least four inches thick, unless the fire-resisting
+partitions extend to the cellar bottom.</p>
+
+<p>Such enclosure of stairways shall not be
+required in factory buildings in which there
+is an exterior enclosed fireproof stairway
+or a horizontal exit serving as a required
+means of exit, as defined in Section 79f,
+Subdivisions 8 and 9 of the labor law.
+Where approved automatic sprinklers are
+installed throughout such buildings, such enclosure
+of stairways shall not be required
+unless more than eighty persons are employed
+above the ground floor.</p>
+
+<p>Regulation <abbr title="Number">No.</abbr> 2. In all factory buildings
+no articles or wares of a combustible nature
+shall be kept or stored inside the limits of
+any stairway enclosure, or unenclosed stairway,
+or on the landings, platforms, or passageways
+connected therewith, nor shall such
+articles or wares be kept or stored under
+any stairway unless such stairway and any
+partitions or doors thereunder are constructed
+of, or covered with, incombustible material.</p>
+</div>
+
+<p>Both rules become effective October 1, 1913.
+The labor law specifically provides for the enclosure
+of stairways in buildings over four stories.</p>
+
+<p>The attorney-general’s opinion was asked by
+the Industrial Board in this case, for the purpose
+of determining at the beginning of its work
+the question of its powers not only in relation
+to matters not covered by legislation but also to
+those covered in part by law. The essential
+part of the opinion follows:</p>
+
+<div class="blockquot">
+
+<p>“It seems to me to be entirely beyond question
+that the industrial board has power to
+adopt rules and regulations upon subjects of
+which the statute already treats. The statute
+itself makes mandatory provisions for many
+safeguards and then makes provisions that
+additional safeguards may be required by
+the industrial board. There is nothing in the
+letter of the statute nor in its manifest intent
+to confine the jurisdiction of the industrial
+board to such few subjects only as
+are not expressly legislated upon by the statute
+itself. Such an extensive limitation upon
+its powers would be manifestly absurd and
+far foreign to the evident purpose of the
+Legislature in enacting additional legislation
+for the protection of the lives and health
+of employes in factories.”</p>
+</div>
+
+<p>The attorney-general’s opinion further states
+that the legislation does not offend any constitutional
+provisions.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>SANITARY SURVEY<br>
+OF THE OHIO</h4>
+
+<p>The Public Health Service, under the direction
+of Surgeon-General Rupert Blue, has
+undertaken a “sanitary survey” of the streams
+which feed into the Ohio river. It is proposed
+to test the waters of these streams in order to
+determine scientifically to what distances the
+contamination of sewage is carried by flowing
+water. The object of the survey is to establish
+standards of pollution beyond which no community
+will be permitted by the federal government
+to trespass in dumping sewage into
+streams.</p>
+
+<p>This is the first time that the federal government
+has ventured to invade the local police
+<span class="pagenum" id="Page_706">706</span>
+powers of municipalities, except in times of
+great extremity, such as during the yellow fever
+epidemics along the gulf coast.</p>
+
+<p>The survey of the Ohio Valley will probably
+result in the erection by the government of
+“purification plants.” It has been suggested that
+such legislation will be deemed constitutional
+under the law prohibiting the transportation of
+disease germs in interstate commerce.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>OREGON COMMISSION<br>
+AS STRIKE ADJUSTER</h4>
+
+<p>The Industrial Welfare Commission which
+was created by the last Legislature to determine
+and enforce reasonable wages, hours and
+conditions of work among women and minor
+employes in Oregon began work June 3 with
+Bertha Moores representing the employes,
+Amedee Smith, a retired manufacturer, representing
+the employers and Edwin V. O’Hara,
+chairman of the committee of the Consumers’
+League which secured the passage of the act,
+representing the public and chairman of the
+commission. Caroline J. Gleason, whose investigation
+of the wages and conditions of women
+workers in Oregon furnished the chief data in
+the campaign which resulted in the passage of
+the law under which the commission operates,
+is paid secretary.</p>
+
+<p>At the beginning of its work the commission
+was asked to adjust a strike among the women
+employes of the Oregon Packing Company at
+Portland, which employs about 200 girls and
+women during the summer season. It had no
+power to make a legal ruling effective in less
+than 90 days and by that time the packing season
+would be over for this summer, so its office
+could be one of conciliation merely. Investigation
+revealed that with the piece rate in
+force a large number of the workers were earning
+as low as fifty to ninety cents a day.
+The commission succeeded in getting the company
+to sign an agreement pending the setting
+of a legal minimum, which fixed one dollar a
+day as a minimum for all workers except those
+“old or crippled” who may secure a special
+permit. Piece rate prices were re-arranged so
+that the worker of “average ordinary ability”
+would earn $1 a day, thus enabling the better
+workers to make more.</p>
+
+<p>Two “conferences” of nine members each
+have been organized by the commission, one to
+consider questions relating to mercantile establishments,
+the other to deal with factory problems.
+The commission is engaged in forming
+conferences to deal with laundries, telephone
+companies and hotels and restaurants.</p>
+
+<p>Interesting recommendations have been made
+by the conferences already established. The
+mercantile conference reported that forty dollars
+a month is required for the decent maintenance
+of women workers in that occupation.
+The factory conference has recommended $8.60
+a week pay as a minimum for factory workers,
+and a nine-hour work day. The present legal
+maximum is ten hours a day. Investigation has
+shown that one-half of the department store
+girls receive less than forty dollars a month at
+present and about the same proportion of factory
+girls get less than $8.60 a week. If the
+commission, after holding a public hearing as
+provided by law, decides to enforce these recommendations,
+its decision will directly affect the
+wages of fully one-half the women workers in
+department stores and factories in Portland.</p>
+
+<p>The commission has authority to regulate the
+employment of minors without calling a conference,
+though it holds the usual public hearing.
+It favors restricting night work of girls under
+eighteen in all industries, its chief opponents
+being the department stores.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>NEW METHODS IN<br>
+MOTION PICTURES</h4>
+
+<p>Motion pictures are bringing the scenes and
+events of distant lands and even of other ages
+vividly to the eyes. The Durbar, the coronation,
+the Scott antarctic expedition, the story of
+“Quo Vadis,” as shown by the “movies,” not
+to mention a thousand and one travel subjects
+from a railway trip in the Andes to street scenes
+in China, are playing a growing part in popular
+education. Films are being used increasingly
+to spread information and enlist public co-operation
+in the struggle against tuberculosis, dirty
+milk, flies and other menaces to health. And
+now, as described in <span class="smcap">The Survey</span> of September
+6, Mr. Edison himself is enlisted in the problem
+of adapting motion pictures to school training.</p>
+
+<p>All this development of course hangs on improvement
+in the mechanism by which motion
+pictures are projected on the screen. A new
+method is announced designed to eliminate all
+flicker which is clearly one of the serious problems
+in its strain upon children’s eyes. The inventor
+of the machine, called the vanoscope,
+is Lewis C. Van Riper and he essays to
+show continuous action by having each picture
+dissolve into the next instead of projecting a
+series of entirely distinct pictures on the screen.
+Col. S. S. McClure has been so impressed with
+the especial adaptability of this new method
+for educational purposes, that he is now on a
+trip to Europe to gain what he can for its wide
+use in this field.</p>
+
+<p>In the prevalent method of motion picture
+projection, the film movement is in the nature of
+a series of quick jerks, each taking about one-half
+of the time given to each picture. Nearly
+50 per cent of the time is taken up in moving the
+pictures forward and 50 per cent in projecting
+<span class="pagenum" id="Page_707">707</span>
+them upon the screen. Hence the flicker and
+the chance of eye strain.</p>
+
+<p>The principle underlying this present method
+of projection is that the persistence of vision in
+the human eye is about one-tenth of a second.
+It has been found that a speed in projection of
+from 16 to 17 pictures per second is necessary
+to enable the eyes to retain the image of one
+picture until the next is projected upon the
+screen and to overcome or partially overcome
+annoyance to the eyes caused by the intervals.
+This is the rate of projection now used throughout
+the world on all standard machines for
+monochrome pictures and photographs for such
+use have had to be taken at a speed of at least
+16 per second in order to appear natural.</p>
+
+<p>Some of the advantages claimed for the new
+method are that there are no intervals between
+successive pictures, but each succeeding picture
+dissolves into the one preceding it in exact proportion
+as the volume of light shifts from one
+to the other; that there is no flicker; and less
+danger of fire because the projecting light does
+not reach the film directly, but is reflected by
+the mirrors; and that the front seats in an assembly
+room would be made as desirable as any
+other seats.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>BOSTON CONFERENCE<br>
+ON ILLEGITIMACY</h4>
+
+<p>Perhaps in no field of social work are the
+factors less adjusted, the issues more baffling,
+than in that relating to unmarried mothers. It
+has become not only desirable, but positively imperative,
+to a wise pulling together for the workers
+in Boston dealing with problems related to
+illegitimacy to unite in some sort of permanent
+group for free discussion of aims and means.</p>
+
+<p>The Conference of Workers on Problems of
+Illegitimacy which was organized in Boston last
+year has had a fruitful year of discussion. Each
+month some general question has been up for
+consideration, the question always being precipitated
+by the detailed story of some puzzling specific
+case. In this way have been thrashed out
+the following questions:</p>
+
+<p>What shall we do with unmarried mothers who
+are unfitted for housework?</p>
+
+<p>Is it ever advisable to separate the child from
+a normal mother?</p>
+
+<p>Is institutional or private care best for a pregnant
+girl and under what circumstances is each
+preferable?</p>
+
+<p>What shall we do with pregnant girls from
+other states or countries?</p>
+
+<p>The conference was pretty fully agreed upon
+the policies of treatment that follow.</p>
+
+<p>It is advisable to keep mother and child together
+where possible if the mother is in any
+way capable of bringing up the child. In cases
+where the mother is unfitted for domestic service
+it may be decidedly wiser to place her where she
+is happier and more efficient, in a factory, for
+instance. But even here financial responsibility
+for the baby, and at least weekly visits to the
+child, should be insisted upon.</p>
+
+<p>It is desirable to send back to the states or
+countries from which they come girls who arrive
+here pregnant in order that each section may develop
+care for its own unmarried mothers. Although
+this may mean old-fashioned care in the
+individual case because of the lack of modern
+agencies and institutions in places from which
+the girls come, it is one of the means of making
+localities that are not equipped to deal with such
+situations more alert to their responsibility.</p>
+
+<p>It is difficult to determine in what cases individual
+care or institutional care is wise. Particularly
+wayward girls often need the discipline
+of an institution, while the more innocent type
+are not helped by association with those they
+are sure to be brought in contact with, even in
+institutions that take only first offenders.</p>
+
+<p>Wherever there are not very positive reasons
+to the contrary, it is of great importance to tell
+a girl’s family of her approaching confinement
+in order to enlist their co-operation and to enable
+the girl to have the most natural and helpful
+relationships possible at a time when she needs
+every constructive influence to build up courage
+for her life ordeal and determination to keep
+her child and give it every opportunity within
+her power. Her family ought to be, and if properly
+approached and dealt with, often is, the social
+worker’s greatest asset in this effort.</p>
+
+<p>It was discovered that little provision, other
+than that in almshouses, is made for people who
+have had cases of venereal disease, as the good
+private institutions caring for prospective mothers
+exclude, and naturally, such cases.</p>
+
+<p>The Conference have also discussed at each
+meeting various aspects of the greatest single
+cause of illegitimacy—feeble-mindedness. They
+have tried to formulate more definitely the indicia
+of the high grade feeble-minded cases, and to determine
+more clearly the relation of the social
+worker’s investigation and history to the doctor’s
+analysis. They have debated the desirability of
+domestic service under supervision for these defective
+girls. The high grade feeble-minded girls
+if cared for in an institution probably cost the
+state more than the same girls doing domestic
+service, even allowing for the immense amount of
+surveillance necessary on the part of the visitor
+to keep them out of harm’s way. Neither institutions
+nor philanthropic agencies have enough
+equipment adequately to deal with this class of
+delinquents. The conference has faced the question
+of segregation in institutions and of sterilization
+as a means of preventing a continuance of
+this evil in future generations. They have asked
+whether it was ever safe to return a feeble-minded
+<span class="pagenum" id="Page_708">708</span>
+girl to the community. While agreeing
+that marriage of feeble-minded persons ought not
+to be permitted, they have not reached a final
+conclusion as to the best means of prevention.</p>
+
+<p>A committee has been appointed to make an investigation
+of the causes other than feeble-mindedness
+that are at the root of illegitimacy. This
+committee has already done valuable work as a
+by-product of its main purpose in suggesting important
+points which agencies are apt to omit in
+their histories, and in aiding in a greater standardization
+of work. A full report is expected
+of this committee next year.</p>
+
+<p>Study groups are being organized to take up
+the questions of legislation, venereal disease, the
+efficiency and range of existing institutions, public
+opinion, feeble-mindedness and statistics. Any
+further information about the Boston Conference
+may be had from the secretary, Mrs. Stanley
+King, 295 Beacon Street.</p>
+
+<div class="linebox lineboxrt lineboxlf">
+<div class="figcenter" style="max-width: 350px;">
+ <img src="images/i004a.jpg"
+ alt="war cartoon">
+<p class="captionright">
+<cite>Minor in <abbr title="Saint">St.</abbr> Louis Post-Dispatch.</cite><br>
+</p>
+
+<p class="captionleft">“What have you got against me?”</p>
+
+<p class="p0 captionleft">“Nothing. But our masters have ordered us to
+fight.”</p>
+
+</div><!--end figcenter-->
+</div><!--end line boxes-->
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>PROBING<br>
+FOR PEACE</h4>
+
+<p>The investigational method has proved of
+such demonstrated worth in all-American situations—whether
+of civic conditions or strikes—that
+its application to the peace movement will
+be watched with interest. The reference is of
+course to the appointment by the International
+Peace Endowment, through Nicholas Murray
+Butler, president of Columbia University, acting
+director of the endowment, of an international
+commission of inquiry into the Balkan war.
+The first move toward this is said to have come
+from Bulgarians who in consequence of attacks on
+them by the Greek and Servian press demanded
+a public inquiry into the extent and responsibility
+for atrocities committed during the war.
+The New York <cite>Evening Post</cite> calls the proposed
+work of the commission a “diagnosis of war,”
+and congratulates the peace movement on the
+greatest opportunity that has been presented it
+to win the world’s serious attention to the nature
+and implications of war. The topics of
+investigation include the responsibility for the
+outbreak of war, the economic waste caused by
+it and the truth about the outrages committed
+by non-combatants. Of these, the last appeals
+most strongly to the popular imagination, but
+the first, the responsible cause, is, in the opinion
+of the <cite>Post</cite>, the most fundamental. The main
+point of attack on war by peace advocates says
+the <cite>Post</cite> “lies in the direction of ascertaining
+who or what is responsible for war. Is it being
+fought for a worthy cause, or is it being fought
+because certain leaders or certain interests desire
+war? It makes all the difference in the
+world whether the mangled bodies on the hillsides
+in Thrace and Macedonia are the price
+<span class="pagenum" id="Page_709">709</span>
+paid for the liberation of the Balkans from
+Turkish misrule, or whether those dead bodies
+and shattered limbs are incidents in the ambitions
+of a king or a commander-in-chief, and a
+testimonial to the skill of travelling salesmen
+from the gun factories at Essen and Creusot.”</p>
+
+<div class="linebox lineboxrt lineboxlf">
+<div class="figcenter" style="max-width: 350px;">
+ <img src="images/i004b.jpg"
+ alt="war cartoon">
+<p class="captionright">
+<cite>Cesare in New York Sun.</cite><br>
+</p>
+
+<p class="caption">THE WORLD IS OVERCROWDED AND
+OVERARMED.—<cite>London Economist.</cite></p>
+
+</div><!--end figcenter-->
+</div><!--end line boxes-->
+
+<p>A list of names has been suggested as members
+of the commission, but the final make-up
+will not be known until the meeting to discuss
+the work of the commission which is to be held
+soon in Paris. The proposed membership includes:</p>
+
+
+<ul>
+<li>Prof. John D. Prince, of Columbia University, representing
+the United States.</li>
+
+<li>Francis W. Hirst, editor of the <cite>London Economist</cite>,
+representing Great Britain.</li>
+
+<li>Baron d’Estournelles de Constant, senator and president
+of the French parliamentary group favoring international
+arbitration, representing France.</li>
+
+<li>Prof. Philipp Zorn, of Bonn University, representing
+Germany.</li>
+
+<li>Prof. Paul N. Milukoff, editor and leader of the
+Constitutional-Democrats in the Russian Duma, representing
+Russia.</li>
+
+<li>Prof. Heinrich Lammasch, of the University of Vienna,
+well known as a jurist, representing Austria-Hungary.</li>
+</ul>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>PEACE IN<br>
+WEST VIRGINIA</h4>
+
+<p>The West Virginia coal strike, which lasted
+sixteen months, and was marked by the violence
+and bitterness of a civil war, has come to
+an end, and contracts have been signed on both
+Paint and Cabin creeks. The Paint creek agreement,
+which was signed on July 24, accords full
+recognition to the United Mine Workers, and
+grants practically all their demands, including
+the check-off; that is, the deduction in the office
+from the miner’s wages of his union dues and
+the payment of them to the union officials. On
+Cabin creek the agreement signed on July 29
+did not grant recognition to the unions, but it
+is stated in the <cite>Coal Age</cite> that by the change
+from the long ton to the short ton the miners
+have secured an increase in wages, amounting
+to about 12 per cent. They have gained
+also the nine-hour day, a semi-monthly pay, the
+right to employ check weighmen and to trade
+where they please. The Paint creek contract
+is to run until March 31, 1914, while that of
+Cabin creek is to continue a year longer, coming
+to an end April 1, 1915. The <cite>Coal Age</cite> sums
+up the cost of the bitter struggle, now ended,
+as follows:</p>
+
+<div class="blockquot">
+
+<p>“Thirteen lives were lost in the insurrection.
+The cost in money was as follows:</p>
+
+<p>Operators loss in business $2,000,000; Loss to
+the miners in wages $1,500,000; Cost to the tax
+payers of the State $400,000; Additional cost
+to the tax payers of Kanawha County $100,000;
+Cost to the United Mine Workers collected by
+the check-off, a forced levy on the miners of
+Illinois, Indiana, Ohio and Western Pennsylvania
+$602,000; Property destroyed $10,000.
+This makes a total of $4,612,000.”</p>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+
+<div class="chapter">
+<h3>
+BUSINESS IS LIFE: A SURVEY<br>
+OF NEGRO PROGRESS<br>
+</h3>
+</div>
+
+<p class="p0 right r4 allsmcap">
+WM. ANTHONY AERY<br>
+</p>
+
+
+<p class="drop-cap"><span class="smcap">Negro</span> farmers, bankers, merchants, contractors,
+cotton brokers, insurance men,
+real estate dealers, social service workers, town
+and community builders, caterers, engineers,
+undertakers, educators—these men, representing
+the entire country and especially the South, told
+at the recent session of the National Negro Business
+League held in Philadelphia, with eloquence
+torn of simplicity and hard experience in the
+school of life, thrilling stories of success won
+through struggle, persistence, and good-will
+toward their white neighbors. The Philadelphia
+meetings furnished abundant proof of the statement
+that quality and service count in business
+and that men buy good products and efficient
+service without regard to color or race.</p>
+
+<p>“Forward to the land!” In thundering tones
+did this command and entreaty ring out through
+the Academy of Music to the thousands of Negroes
+who had assembled to hear Booker T.
+Washington deliver his annual address to the
+league. There are some 200,000,000 acres
+of unused and unoccupied land in this country.
+Will the American Negro, especially
+the city Negro, acquire his share through
+hard work and thrift? Will young Negroes
+quit the poolrooms with their debasing effects
+and march into usefulness and comfort on
+the land? Will the Negro seek the signs of civilization—the
+automobile and the dress suit—and
+miss civilization as it is represented in the home
+and the bank account? Will the Negro forego
+some pleasures today so as to enjoy richer treasures
+tomorrow? Will the Negro allow others
+to think and plan for him instead of thinking
+and planning for himself? These vital questions
+of business and of life itself were put squarely
+to the thoughtful Negroes who had come great
+distances at their own expense and in many cases
+at considerable sacrifice of time and money.
+They also reached some of the city Negroes who
+had come out of mere curiosity to hear Mr.
+Washington urge a return to the Negro’s richest
+opportunity—the land.</p>
+
+<p>Mr. Washington is far-sighted enough, however,
+to see the need of better Negro business
+enterprises. There is, indeed, according to his
+opinion, room in this country, without conflicting
+with the interests of white people, for 900,000
+more Negro farms; 1,000 sawmills; 1,000
+brickyards; 4,000 grocery stores; 2,000 dry goods
+stores; 1,500 shoe stores; 1,500 millinery shops;
+1,000 drug stores and 90 banks.</p>
+
+<p>Successful “demonstrations”—human interest
+stories—were a conspicuous feature of the sessions.</p>
+
+<p>The organization of a $100,000 old-line legal-reserve
+<span class="pagenum" id="Page_710">710</span>
+insurance company by Negroes, headed
+by H. T. Perry, and its heroic struggle during
+five years to secure the paid-in capital, was told
+simply and dramatically by H. H. Pace. It
+shows what can be done in the South. Perry’s
+experience in Atlanta should put fresh courage
+into the hearts of ambitious Negroes who really
+want to give their people better stores, better
+banks, better insurance companies, better hotels,
+and better country life. The story of Perry’s
+defeat in collecting the paid-in capital, required
+by the Georgia law for the starting of the Standard
+Life Insurance Company of Atlanta, followed
+by his victory, through hard work and faith,
+emphasizes the importance of teaching men to
+act co-operatively when they wish to do big
+things. This story will long be remembered by the
+delegates and their friends, for it contains real
+“education for life, in life and by life,” as Dr.
+Wallace Buttrick has phrased the thought—the
+underlying aim of Hampton and Tuskegee.</p>
+
+<p>Another interesting event of the past year, in
+the Negro business world, has been the opening
+of the $100,000 cotton-oil mill at Mound Bayou,
+Miss., a Negro town which was founded by Isaiah
+T. Montgomery, an ex-slave of Joseph Davis,
+brother of Jefferson Davis. This Negro enterprise
+shows what Negroes can do when they pull
+together and turn their disadvantages into advantages.</p>
+
+<p>Nineteen years ago, J. H. Blodgett began his
+up-hill climb with $1.10 in his pocket and a suit
+of underwear in a paper bag. Further, he was
+arrested as a tramp for wearing a straw hat in
+winter time. Today, he owns 121 houses in
+Jacksonville, Fla., having a rental value of $2,500
+a month. Blodgett got his start as a railroad
+window washer at $1.05 a day. He and his
+wife worked hard, saved their money, and finally
+built their own home. He declares that
+there is no excuse for young, able-bodied Negroes
+to waste their time in hotel work at $20
+to $30 a month and tips when they can grow
+tomatoes in Florida at $1,000 an acre.</p>
+
+<p>What is a correct formula for success on the
+farm? Henry Kelley, of Belen, Miss., who has
+been hard at work since 1873 and is now worth
+some $50,000 offers a reasonable one: “Industry,
+economy, education.” Kelley started out independently
+in 1886 with 520 acres of land which
+he cleared as quickly as he could. He built a
+home, and by degrees established a good business
+in cotton ginning, grist milling, and log
+sawing. Then he began to build tenant houses
+and to deal with his own people in the spirit of
+the Golden Rule. Today, he works 1,750 acres
+and has fifty tenants. His payroll ranges from
+$800 to $1,000 a month and he has work for his
+hands “from January through December.” He
+produces about 500 bales of cotton each season.
+He has no trouble, on account of his color, in
+doing business. His Mississippi white friends,
+he says, have always been good to him. Kelley
+is a hard worker still. His day—and that of
+his hands—is “from sun to sun.”</p>
+
+<p>J. T. Kirklin, of Columbia, Mo., started in 1873
+as a handy boy on the State University farm
+and received thirty cents a day. Out of his own
+wages he had to board himself. He was glad
+to keep his job because he was learning how to
+farm scientifically. In 1903 he began to take
+first prizes, in competition with white farmers,
+for his fine strawberries, carrots, watermelons,
+and garden truck. His first market wagon was
+an ordinary wheelbarrow. Later he bought two
+buggy wheels and made a wagon—a push cart.
+While some of his own people were laughing
+at his crude outfit, Kirklin was saving his money
+and improving his small truck garden. Today
+he is worth $20,000 and is a quiet and respected
+citizen.</p>
+
+<p>Has the Negro building contractor who knows
+his business a fair chance to succeed in the South?
+B. L. Windham, of the contracting firm of Windham
+Brothers, Birmingham, Ala., declares that
+efficiency and not color determines the kind of
+work that Negroes receive. His firm has built
+a $100,000 apartment house for white people in
+Birmingham, Ala. It employs, on an average,
+100 people—all Negroes—throughout the year to
+handle some $300,000 worth of contracts. The
+business of this firm of Negro contractors
+has grown from $50,000 in 1903 to $265,000 for
+seven months in 1913 and is carried on from
+the Mason and Dixon line to the Gulf of Mexico.</p>
+
+<p>The annual meetings of the Negro Business
+League give some striking stories of Negro success
+and progress to men and women who need
+courage and inspiration for their work. Other
+stories could be cited to show that the Negro
+who applies himself to business and refrains
+from whining wins the patronage and good
+will not only of his own people but also of the
+white people. Courage, initiative, and persistence
+are indeed required for the task of establishing
+any business.</p>
+
+<p>The resolutions, adopted at the final session
+of the league, summarized the progress of the
+Negro during fifty years of freedom. Ten million
+American Negroes now pay taxes on over
+$700,000,000 worth of property and own 20,000,000
+acres of land (that is, about 31,000 square miles).
+They own 63 banks, capitalized at $2,600,000
+and doing an annual business of $20,000,000.
+Today there are Negro business leagues in twelve
+states.</p>
+
+<p>Facts of Negro progress need to be better
+understood by white and black people. One of
+the best sources of information is the Negro
+Year Book, edited by Monroe N. Work of Tuskegee
+Institute, Tuskegee, Ala.</p>
+
+
+<div class="chapter">
+<span class="pagenum" id="Page_711">711</span>
+<hr>
+<h2 class="no-break">CIVICS</h2>
+<hr>
+<h3>THE CHILD WELFARE EXHIBIT THROUGH<br>
+THE CHILDREN’S EYES</h3>
+
+<p class="center">MAY AYRES<br>
+</p>
+</div>
+
+
+<p class="p2 drop-cap"><span class="smcap">This</span> spring, ten-year-old Ralph in one of the
+Rochester public schools wrote a letter to
+his teacher:</p>
+
+<div class="blockquot">
+
+<p>“Do you know what the Child’s Welfare
+Exhibit is for? Well, if you do not know
+what it is for, I will tell you. It is for the
+child to know better and try and keep the
+house clean, for a dirty house is a terrible
+house to live in. And most every disease
+comes from a dirty house—especially tuberculosis.
+Because we found out over at the
+armory that when you get tuberculosis it
+keeps eating at your lungs, and only fresh
+air will kill tuberculosis.”</p>
+</div>
+
+<p>Ralph had been to the Child Welfare Exhibit
+and come away with one important truth thoroughly
+impressed upon him. The exhibit was
+held during the second week in April. Everyone
+helped, and as their part the public and
+parochial schools offered their children as living
+demonstrations of Rochester school work.
+There were dances, drills, and games every
+afternoon and evening. Children sang together,
+and other children formed small classes of sewing,
+carpentry, electric wiring, cooking, rug
+weaving, drawing, etc., and worked steadily
+under the direction of teachers. The school
+children of Rochester were constantly in touch
+with the exhibit; they were given special holidays
+in which to see it; and their interest was
+keen. The following week those in the upper
+grades were asked to write letters telling about
+what they remembered.</p>
+
+<p>Some 553 of these letters were examined for
+the purpose of ascertaining first, the most effective
+form of presentation for exhibit material,
+and second, the degree to which children
+understand and remember the lessons which
+different exhibits are designed to teach. In
+making the tabulation, only those letters were
+used which were written by the children themselves,
+without outside help. Several had to be
+discarded because they showed evidences of suggestions
+and corrections from the teacher. Every
+reference to an exhibit feature was counted,
+even where the child spoke of the same thing
+more than once.</p>
+
+<p>The most popular feature among the children
+were the entertainments each afternoon and
+evening. These consisted of dances, drills,
+games, and chorus singing by the children themselves.
+Sarah, of the eighth grade, writes:</p>
+
+<div class="blockquot">
+
+<p>“Of all the good sights that I have seen
+and heard, I truly think the exhibit was
+one of the best. The one particular thing
+that interested me so much was the dancing
+which I don’t think could have been any
+better,”</p>
+</div>
+
+<p class="unindent">while Charlotte ungrammatically adds,</p>
+
+<div class="blockquot">
+
+<p>“I think it was a splendid idea to have
+these entertainments, and I am sure it done
+the people good.”</p>
+</div>
+
+<p>The school children not only joined in dances
+and drills, but with the help of their teachers
+formed classes which worked and recited as living
+exhibits. All the children found the classes
+interesting. Says little Michael Ettiopia:</p>
+
+<div class="blockquot">
+
+<p>“I saw manual training. They were making
+desks to sell them. Many people bought
+them for their children to get learned to
+write and read. I saw some girls they were
+making candy, and I asked if they would
+sell the candy. They said ‘No, little boy,
+we don’t sell candy.’ So the people could
+see how to make candy.”</p>
+</div>
+
+<p>Particular attention was paid to the work of
+the boys from the “Shop School.” There was
+a class in electric wiring where the children
+loved to watch the work. Here is a paragraph
+from nine-year-old Raymond’s description:</p>
+
+<div class="blockquot">
+
+<p>“There was a boy with a electric light
+on the front of a box, to batteries in it,
+and a switch on the back. When I saw
+this I said to him, ‘I wired up a electric
+light down cellar and it turned on up by
+the cellar door.’ He said ‘Did you?’ and I
+said ‘Yes, sir.’”</p>
+</div>
+
+<p>The children were quick to recognize the
+ability of others, in such expressions as:</p>
+
+<div class="blockquot">
+
+<p>“The dresses they had were elegant, and
+everything they did was grand. Not one
+boy or girl made a mistake. It was perfect.”</p>
+</div>
+
+<p>One twelve-year-old reports:</p>
+
+<div class="blockquot">
+
+<p>“There was a booth where the children
+of the Industrial School had the things they
+sewed. There were dresses and sacks and
+not a girl over 13 years made them. It
+goes to show what some girls can do.”</p>
+</div>
+
+<p>The most impressive single exhibit seems to
+have been that of the tidy and untidy home,
+which received 8 per cent of the 3,123 references.
+The moving picture show and the library received
+<span class="pagenum" id="Page_712">712</span>
+6 per cent each, and the dairy, playground,
+and market 3 per cent.</p>
+
+<p>The moving pictures appealed strongly to children
+in the fourth, fifth and sixth grades; they
+are mentioned only half as frequently by those
+in the seventh and eighth. The other exhibit
+features received practically the same amount of
+attention from children in all different grades.</p>
+
+<p>Many children devoted two pages or more to
+a description of the bedrooms and kitchens in
+the tidy and untidy home. Here is an account
+given by a ten-year-old girl in the fourth grade:</p>
+
+<div class="blockquot">
+
+<p>“Then in a corner opposite that it showed
+how dirty people keep their houses. The
+bedroom had dirty old clothes on the bed
+which was half made. The kitchen was all
+dirty and dusty, and there was a can of
+tomato emptied out in the dishpan with wet
+dripping greasy rags right above them and
+dripping into them. And the table cloth was
+all dirty and mussed up, and there was some
+sour sauerkraut and cabbage mixed together
+and cooked an hour or two too long. The
+coffee was the strongest I have ever seen
+in my life, and I don’t believe I shall ever
+see any more as strong as that as long as
+I live, and there was not any milk for it,
+and the pickles were mouldy enough to kill
+any child, and the sausage was terrible.”</p>
+</div>
+
+<p>The same child goes on to describe the clean
+and dirty dairy.</p>
+
+<div class="blockquot">
+
+<p>“It showed how your milkman’s dairy
+should be, and how dirty some of them
+were. The dirty dairy was all full of cobwebs
+and there was straw and mud in the
+pails and a cat was lapping the milk right
+out of the pails and the cows were all muddy
+and dirty. But the clean dairy was lovely
+and the barn was all pure white and the
+cows were the cleanest I have ever seen
+and the milk was all rich and creamy and
+clean because the pail was all covered over
+on the top and the yard was all covered
+with green grass and it all was just as clean
+and neat as it could be.”</p>
+</div>
+
+<p>Twelve-year-old Meta draws a lesson from
+the homes and the dairy. She says:</p>
+
+<div class="blockquot">
+
+<p>“The Child Welfare Exhibit is to show
+the fathers and mothers how to bring up
+their boys and girls so that they will make
+good citizens. If the citizens of a city or
+town are good citizens, the town will be a
+good city or town. You would hardly think
+a dirty house would have anything to do
+with the future citizens, but it has. If a
+boy or girl has a dirty home he also will
+be dirty not only in body but in mind also.
+(Dirty in mind means a mind with which
+you cannot think clear.) ... You
+must also have good food because if your
+food is food which does not nourish you
+right, your mind will not be good.”</p>
+</div>
+
+<p>The clean and dirty markets held a peculiar
+fascination for the children, and there are vivid
+accounts of the cat that was “walking over the
+meat and licking the meat” and the “cow’s head
+with a disease that made it all lumpy, lying in
+the corner, with the blood dripping out.” As
+Helen remarks:</p>
+
+<div class="blockquot">
+
+<p>“In the good store the store keeper was
+dressed in white, the food all looked clean
+and in a nice glass case. In the bad store
+the cat was on the counter and the celery
+and lettuce was all dried up, and the rest
+is too disgusting to tell about.”</p>
+</div>
+
+<p>Finally, we have this manly confession from
+an eleven-year-old boy:</p>
+
+<div class="blockquot">
+
+<p>“I think the child welfare exhibit was
+a very nice thing, for it teaches you something,
+at least it did me. The things that
+taught me the most was about the good and
+bad rooms, for I have a bad room; and so
+did the good and bad stores do me good.”</p>
+</div>
+
+<p>All the children saw the moving-picture show,
+which they take care to tell us was a free show.
+The film dealing with the care of the teeth, that
+telling the story of a boy’s camp, one vaguely
+described as “he knocked his wife down and he
+knocked his children down, and they all fought,”
+and the clean milk film received the most attention.</p>
+
+<p>In the center of the armory a small playground
+was erected, and there the older children took
+their little brothers and sisters. One of them
+writes:</p>
+
+<div class="blockquot">
+
+<p>“One of the days when I was there a little
+girl was crying as though her heart was
+broken, because she had to go home, and
+her mother had to promise her she would
+bring her up there the next day, so she would
+stop her crying because she wanted to stay
+and play in the playground.”</p>
+</div>
+
+<p>The library proved a great attraction to the
+children. One after another tells of “reading
+most of the afternoon, and when I got out it
+was most night,” or of starting a book “which
+I came back the next afternoon to finish. It
+was a book of engineers.” The general feeling
+of the children is expressed by Sarah Sedita
+when she says:</p>
+
+<div class="blockquot">
+
+<p>“While looking around I could not express
+my joy, when I went to see the library
+department and saw on a sign what is to
+be in Rochester, which was no other than
+this—that there is to be a public library and
+fifty other branches of it at different places
+in the city. Although I have read ever so
+many books, I could not help then to be
+overjoyed.”</p>
+</div>
+
+<p>Near the library was a booth showing the
+guns, cards, jimmies, daggers, etc., taken away
+from small boys in the children’s court. There
+was also a lurid collection of dime novels from
+the same source. Of these Katherine writes:</p>
+
+<div class="blockquot">
+
+<p>“I was talking to Mr. Killip about the
+boys he had to handle, and he was telling
+how some of them acted. It was very interesting
+to see the things he had taken
+from boys under sixteen years—the revolvers,
+dice, knives, books, cartridges, and
+<span class="pagenum" id="Page_713">713</span>
+other things. Some little boys came along
+and saw the books and one said, ‘Didn’t I
+tell you those were good books? See, they
+got them here!’”</p>
+</div>
+
+<p>This booth and the explainers in charge—the
+explainers seem to have done effective work in
+the Rochester exhibit—impressed the boys very
+seriously. Moses states the case:</p>
+
+<div class="blockquot">
+
+<p>“When a child reads a novel he gets interested
+in them and likes to buy more of
+them. After a boy reads a great deal of
+these novels he gets so that he thinks he is
+the things that he is reading about. And
+soon after that he starts to murder.”</p>
+</div>
+
+<p>Tabulation was made showing the distribution
+of references among the four main types of exhibit
+material—entertainments, models, motion
+exhibits, and photographs, maps, diagrams,
+charts, etc. To reach conclusive results, it
+would be necessary to secure the exact number
+of exhibits shown in each of the four classes.
+We know, however, that there were more photographs,
+cartoons, charts, maps, etc., in the
+Rochester exhibit than numbers on the program,
+or different models, or motion exhibits.
+Donald tells us—“There was charts of the teeth,
+mind, nostrils, ears, throat, various organs,
+limbs, and feet.”</p>
+
+<p>But most of the children who attended the
+exhibit have only a vague memory of the photographs
+which lined the walls, and every reference
+of this kind is capped by three references
+to the program numbers. Models and motion
+exhibits receive practically the same amount of
+attention in all the grades. The lower grades
+were more impressed by the entertainments than
+the higher, and the higher were more impressed
+by the photographs than the lower. The per
+cents for all the children run: entertainment
+35, models 28, motion exhibits 26, and photos,
+maps, etc., 11.</p>
+
+<p>There were 271 favorable comments and 44
+unfavorable comments on the exhibit. The
+favorable run from one little girl’s reiterated
+exclamation of “Oh, it was grand!” to Ralph’s
+dignified statement:</p>
+
+<div class="blockquot">
+
+<p>“Thousands of people were taught by the
+clean and healthy attitude of the building a
+great number of things. It was probably
+the best move toward cleanness ever held
+in this city.”</p>
+</div>
+
+<p>With a few exceptions, the unfavorable comments
+have to do with the overcrowding, from
+which the children suffered greatly. As a
+natural result of such a throng, the halls became
+stuffy, and there seemed to be no adequate
+system of ventilation. One of the boys writes:</p>
+
+<div class="blockquot">
+
+<p>“There were imposing posters on the poor
+air system in the tenement houses, but right
+there, where thousands of people came daily,
+the air was so had that people who really
+wanted to see the things stayed away.”</p>
+</div>
+
+<p>A twelve-year-old girl makes this scathing
+comment:</p>
+
+<div class="blockquot">
+
+<p>“At different booths they had pictures
+showing how to prevent children from getting
+germs of disease. Then the mothers
+take their children to a place like that.
+Saturday night after I got in the Armory
+basement from dancing it was so full of
+dust I could hardly breathe. Then we went
+up stairs and mother said that the American
+mothers were going crazy. The Child’s
+Welfare Exhibit is very fine, but I think
+the Rochester mothers had better tone down
+and be more careful of where they take
+their children. For it was just full of germs
+down there, both up and down stairs.”</p>
+</div>
+
+<p>There were many general comments, and lessons
+drawn, such as “Many people will say ‘Oh,
+I can’t afford milk, it’s too expensive.’ But this
+is all foolish, as in the end milk is the cheapest
+and best of foods.” An eleven-year-old girl
+writes:</p>
+
+<div class="blockquot">
+
+<p>“The thing that took my interest was the
+different cares and diseases of the babies
+that they are apt to get when they are neglected.
+And it will help me very much during
+vacation, as I am going to take care of
+the baby.”</p>
+</div>
+
+<p>Finally comes this simple tribute to the success
+of the exhibit:</p>
+
+<div class="blockquot">
+
+<p>“When looking at the pictures of poor
+children and homes and the condition of
+the homes, it seems hardly possible that
+such conditions could exist in Rochester, but
+when you get out of doors again your eyes
+are opened and you see conditions that you
+never noticed before.”</p>
+</div>
+
+<p>The children speak frankly in their letters,
+often telling more about themselves than they
+realize. There is something pathetic in the following
+glimpse of home life which Maurice
+affords us:</p>
+
+<div class="blockquot">
+
+<p>“The good food and bad are almost what
+I take, but I don’t drink coffee any more,
+and will not take it. My brother used to
+have coffee every meal, but since my mother
+was there he drinks no coffee but all milk
+and bread. Bread is about the only good
+food there is, and I have had lately a good
+appetite for it.”</p>
+</div>
+
+<p>One feels a throb of sympathy for the boy
+who says:</p>
+
+<div class="blockquot">
+
+<p>“We need something to make us stronger
+mentally, and something to abolish the
+truant officer.”</p>
+</div>
+
+<p>Many of the children are quite sure that the
+exhibit was for the instruction of the “lower
+classes” only, and have a pleasant feeling of
+superiority as they speak of its influence. Says
+one with some indignation:</p>
+
+<div class="blockquot">
+
+<p>“The thing impressed me as if the Italians
+and Germans were having more done for
+them than the Americans and respectable
+people.”</p>
+</div>
+
+<p>And finally ends a mournful letter with the
+conclusion many other observers have reached
+before her:</p>
+
+<div class="blockquot">
+<span class="pagenum" id="Page_714">714</span>
+<p>“The impression of the whole exhibit on
+me was that it is slow work.”</p>
+</div>
+
+<p>It is of course impossible to draw any hard
+and fast rules as to the effect of exhibit material
+upon an adult audience from these letters
+of school children. Certain things, however, are
+of enough significance to warrant attention on
+the part of exhibitors. With the exception of
+the moving picture exhibit all these different
+features were about as interesting to the children
+in the seventh and eighth grades as to those
+in the fourth, fifth and sixth. Difference in
+age seems to have little to do with the strength
+of the impression received. The fact that children
+acted in the entertainments and motion
+exhibits probably accounts in part for their interest
+in these two forms of exhibit material,
+but it cannot account for the high per cent of
+attention paid to the tidy and untidy home, the
+moving pictures, the library, the clean and dirty
+dairy, or the clean and dirty market. Entertainments
+interested them most, models next,
+then motion exhibits, and photographs least of
+all. Difference in age becomes a factor when
+considering the type of material rather than the
+individual exhibit, and we find interest in entertainments
+lessening, and that in photographs and
+diagrams increasing towards the higher grades.
+Through all the grades, however, models and
+motion exhibits receive very nearly the same
+amount of attention, and together receive more
+than half of all the references made. Among
+adults, it seems safe to assume that the relative
+order of interest would be the same.</p>
+<hr class="chap x-ebookmaker-drop">
+
+
+<div class="chapter">
+<h3>SOCIALIZING THE COUNTRYSIDE</h3>
+
+<p class="center">MARY H. FISHER<br>
+</p>
+</div>
+
+<p class="p2 drop-cap">A little over three years ago, in the spring
+of 1910, a newcomer to the little town of
+Amenia, Dutchess County, New York, inspired
+perhaps by the glorious sweep of the twenty-five
+acre field on his recently acquired possessions,
+summoned to his home a handful of his
+neighbors and laid before them the germ of an
+idea which a few weeks later was to blossom
+into the full-blown Amenia Field Day. At the
+start, the newcomer offered the community his
+field, his time, his assistance in every way possible,
+and asked and obtained of them that spirit
+of co-operation which has made Amenia Field
+Day stand for what it does today. In 1910 the
+attendance was 3,000; each succeeding year, it
+has increased; in 1913, it was 10,000, and 1914
+will doubtless see it bigger yet.</p>
+
+<p>The Amenia idea has been described as “an
+experiment in co-operative recreation”; a high-sounding
+phrase, which means simply that the
+people of Amenia get together, plan together,
+work together to the end that one day a year
+they may play together.</p>
+
+<p>Simple though this idea is, it has not been an
+easy one to inspire in the hearts of New York
+and Connecticut farmers (for Amenia is less
+than three miles from the state line). The
+rural population is admittedly composed for the
+most part of conservatives, unimpressionable,
+and slow to arouse to anything which savors of
+innovation, and which does not bring in its train
+anything of palpable, material benefit. For generations
+past, they have had their county fairs,
+with concomitant cattle and poultry exhibits,
+horse-racing, fakers, and side-shows of rather
+more than a questionable nature. They have
+had farmers’ picnics, for the most part small
+affairs, of purely local interest. But the Amenia
+idea was conceived in a spirit bigger and
+broader, and, it is believed, more truly democratic
+and more representative of what public
+spirit in a rural community ought to be. To
+quote from the program of the fourth annual
+Amenia Field Day, “The Amenia Field Day
+offers, as a substitute for the commercialized
+fair, a free day of wholesome enjoyment, supported
+by the united efforts of a whole community.
+One day a year the people of Amenia
+invite the whole countryside to such a day of
+clean and simple recreation, without gamblers,
+fakers, intoxicating liquors, or vulgar sideshows.
+Admission to our festival is free to all.”</p>
+
+<p>This year, the committee strained every nerve
+towards including in the day’s entertainment
+features that should take in everyone, young
+and old, of both sexes. For boys, they planned
+a series of athletic events, running and jumping
+contests, open to all comers, without limitation
+save as to age. Prizes were generously
+donated by a leading citizen of Amenia, but the
+committee is seriously considering doing away
+with all prizes next year, except the simplest
+of silk badges, commemorative of the event.</p>
+
+<p>The scope of athletic sports, in which it is
+wise for girls to participate, is so limited that
+this year for the first time folk-dancing was instituted.
+The committee imported a teacher from
+the Bureau of Recreation, Department of Parks,
+New York City, and entrusted to her not merely
+the task of teaching the graceful and quaint
+dances, that have been imported from over the
+seas, to the maidens of Dutchess County, but
+the far more difficult task of organizing the
+classes, of getting the girls to join, of persuading
+the mothers to allow their daughters to join.
+Nowhere are social strata so well-defined, nowhere
+religious and racial lines so closely drawn
+as in the country community; nowhere are barriers
+of caste so hard to break down. To level
+the ranks of prosperous and poor, to bring about
+harmony between Catholic and Protestant elements,
+requires a very large measure of diplomacy
+and tact, combined with human sympathy.</p>
+
+<p>For small children of both sexes, under mature
+leadership, were arranged the games which
+city children for generations past have known
+and loved, and in turn handed down to their
+smaller brothers and sisters; games such as “cat
+<span class="pagenum" id="Page_715">715</span>
+and rat,” “farmer-in-the-dell,” etc., which for
+some inexplicable reason seem never to have
+penetrated the school playgrounds of Dutchess
+County.</p>
+
+<div class="figcenterwide">
+ <img src="images/i011.jpg"
+ alt="Title or description">
+ <p class="caption smcap">DANCING ON THE
+GREEN, FIELD DAY
+AT AMENIA, DUTCHESS
+COUNTY, NEW
+YORK.</p>
+</div><!--end figcenter-->
+
+<p>On Field Day, August 19, for miles around
+Amenia, the holiday spirit was in the air. Everybody
+with his wife and family, in automobile,
+farm wagon, or on foot, took the road that led
+to Amenia Field; even those who professed no
+interest in the events of the day, came “just
+to see who was there!” Everybody brought
+lunchbaskets and spread the contents under the
+trees, in true picnic style, since nothing but soft
+drinks and sandwiches were sold on the grounds.</p>
+
+<p>Throughout the day, a band of musicians
+played patriotic and popular airs. The old folks
+gathered together contentedly in groups, listening
+to the music, while keeping an admiring
+eye on the prowess of their athletic sons, the
+grace of their daughters dancing on the sward.
+Young and old participated in the grand march
+that took place immediately after lunch-hour.</p>
+
+<p>Afterwards, in a tent-covered auditorium, men
+and women of national prominence addressed an
+attentive audience on subjects chosen for their
+interest to a rural population. Suffragists, from
+Poughkeepsie and New York, by way of propaganda,
+presented an open-air pageant portraying
+the advance of women’s education in modern
+times. Meanwhile, a demonstration of alfalfa-growing,
+under the supervision of the Dutchess
+County Farm Bureau, and the State Department
+of Agriculture, was given in a neighboring
+field. Enthusiastic “fans” of Dutchess County
+were given an opportunity to cheer at a baseball
+game between two local teams.</p>
+
+<p>The day finished with a band concert held in
+the Post Office Square, of Amenia, which had
+been decked with hundreds of lighted Chinese
+lanterns, strung from adjoining buildings. The
+expense of this concert, as of all the other features
+of the day, was met by popular subscription.
+Everybody was invited, nobody solicited,
+to contribute, according to his means.</p>
+
+<p>On every program of Amenia Field Day has
+been printed these principles:</p>
+
+<div class="blockquot">
+
+<p>“You have got to make the country as attractive
+socially as the city if you want to keep the
+young folks on the farms.</p>
+
+<p>“There’s a good deal of work in the country,
+but most of our boys and girls have forgotten
+how to play.</p>
+
+<p>“Baseball is a splendid game, but it isn’t the
+only one. Every healthy boy should be interested
+in at least half a dozen others. Don’t
+merely watch others play games; play them
+yourself.</p>
+
+<p>“You can’t drink strong drink and be an athlete.
+Get your boys interested in honest and
+healthy sports, and save them from drink and
+dissipation.</p>
+
+<p>“Contests and competitions are not the main
+thing. ‘The strong compete and grow stronger;
+the weak look on and grow weaker.’ The main
+thing is play. Learn the great lesson that play
+is just as necessary for your sons as work.</p>
+
+<p>“The community should help to run its own
+recreations. Its festivals should be, not only
+for the people, but of and by the people.”</p>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3>
+MODEL HOUSING AS A COLLEGE COURSE<br>
+</h3>
+</div>
+
+
+<p>Some of the concrete results of the Tuskegee
+experiment in reconstructing the interior of the
+Negro rural home, were told in <span class="smcap">The Survey</span> of
+August 30. Paine College, Augusta, Ga., a
+school for Negroes, supported for thirty years
+by southern white people, who feel that the
+Negro question can only be solved when the
+white descendants of slave owners set their
+hearts and heads to the task, is endeavoring to
+experiment on the reconstruction of the Negro
+city home by change of material environment
+If a $50,000 endowment can be raised the college
+will put into effect a plan of housing designed
+to prove it profitable, not only morally
+but financially, to provide the Negro an exterior
+environment which shall make the task
+of educating him for life easier. The scheme
+and the demand for better housing on which
+<span class="pagenum" id="Page_716">716</span>
+it is based is described by Mrs. John D. Hammond,
+wife of and co-worker with the white
+president of Paine College.</p>
+
+<p>The whole plan is based upon the belief that
+the Negro is himself eagerly striving for a
+decent living. The Negroes’ own fight, individually,
+for better homes is said to be little
+short of heroic. All through the South, in city
+and country, Negro-owned homes witness to the
+increasing prosperity of a large class, and to
+the effort and self-denial of thousands more,
+whose income would seem to many of us, to put
+house-owning utterly out of the question.</p>
+
+<p>But most Negroes belong to that economic
+class which, the world over, pays the heaviest
+rent in proportion to its income and yields the
+landlord the largest return on his investment,
+yet which receives in return little which is compatible
+with health or decency.</p>
+
+<p>This is the tragedy of the Negro slum. Nobody
+is trying to abolish it, because nobody believes
+it can be done. We believe the Negro
+breeds the slum—instead of the slum breeding
+many of the Negro’s defects. Everywhere else
+people are re-creating the slum-dweller by abolishing
+the slum. We make no effort, partly because,
+as yet, few of us know of the widespread
+struggle for better housing the Negro
+is himself making.</p>
+
+<p>What is needed, Mrs. Hammond believes, is
+an experiment station in Negro housing in the
+South. When it is proven, as it surely can be,
+that Negro day laborers and washerwomen can
+be decently housed at a fair profit to the landlord,
+southern money will be invested in houses
+of the right kind. But somebody must prove it,
+and advertise the proof far and wide.</p>
+
+<p>The plan by which Paine College hopes to
+prove it is, in brief, to buy a city block of about
+six acres in Augusta, Ga., and build on four
+acres little three-roomed houses, such as day-laborers
+and washerwomen rent. The houses
+are to have a sink in every kitchen (water in
+the house is to this class a luxury unknown),
+and a toilet, ample window space, closets, and
+the porch so necessary to family comfort in
+a warm climate. By building double houses,
+and four acres full of them at a time, they can
+be put up for $850 per double <span class="lock">house.<a id="FNanchor_1" href="#Footnote_1" class="fnanchor">[1]</a></span> The rent
+would be two dollars the room per month, the
+current rent for that district. The lot for each
+family would be 20 x 105, which would afford a
+little garden-space in the rear—a privilege
+highly esteemed by many of the poorer Negroes,
+and one which, under the plan proposed, would
+be a powerful aid in the upbuilding of home and
+family life.</p>
+
+<p>Four acres of the six-acre block would give
+room for forty double houses. The other two
+acres Mrs. Hammond designs to use as a playground
+for the children, and a site for a community
+house. This house should contain a
+kindergarten room and a room for boys’ clubs
+which could be thrown together at night and
+used for the recreation and the instruction of
+the grown people. It should have a room for
+cooking classes, one for sewing classes, a few
+free baths for men and women; and a small
+laundry and drying room, like those in the East
+End of London, a small weekly payment for
+the use of which would relieve the mothers from
+the heaviest of their drudgery, and set free much
+of their time for home-making. It would also
+make possible a war of extermination against
+the accumulations of trash about the ordinary
+Negro home, where so many abominations are
+claimed to be necessary for the sake of the pot
+and fire in the yard “to boil de clo’es.”</p>
+
+<p>Rent would be collected on the Octavia Hill
+plan, with its concomitant thrift clubs, mothers’,
+men’s, children’s, and home-improvement clubs,
+and these clubs would do for the tenants just
+what it does elsewhere for slum-dwellers of
+other races. They would, Mrs. Hammond believes,
+be built up in character, the houses would
+be saved from the usual degeneration of property
+rented to this economic class, a good return
+would be realized on the investment, and the
+children ultimately turned over to the community
+as self-respecting and law-abiding instead of
+furnishing, as is inevitable under present conditions,
+their full quota of paupers and criminals,
+to be carried by the taxpayers of the city.</p>
+
+<p>Three rooms would be reserved for the Negro
+worker, who would not only keep them as a
+model home, but would use them to train the
+girls in housework. This would leave seventy-nine
+three-roomed homes for rent, at six dollars
+each monthly, a yearly total of $5,688.00. This
+sum would pay the salary of the social worker,
+who is a necessity to the success of the plan, and
+yet yield 10 per cent gross on the investment,
+though two acres of the land and the settlement
+house, representing one-fifth of the sum invested
+would he unproductive from a commercial point
+of view. This is on the basis of an expense of
+$9,000 for land, $34,000 for forty double houses
+and $7,500 for the settlement house, a total investment
+of $50,500.</p>
+
+<p>Rentals from Negro property now yield a
+larger gross return than this, as do rentals from
+similar property elsewhere; but the houses deteriorate
+so rapidly from misuse that the landlord
+feels that only an extraordinary profit
+while they last can insure him against actual
+loss. A gross return of 10 per cent where
+the buildings suffered only the depreciation
+caused by rational use would be as attractive to
+the ordinary business man here as elsewhere.</p>
+
+<p>Mrs. Hammond’s scheme would be considered
+part of the educational system of Paine College.
+Good housing and good living as taught
+in the settlement and practically applied in the
+model housing plan would become a part of the
+school curriculum. The raising of the endowment
+fund is the present problem of Paine College.
+The peculiarity of this, as of all other
+Negro schools, is that the more students it has
+the poorer it is. Few of the pupils can pay the
+full amount asked of them, which is itself less
+than the actual cost of their board and tuition.
+Some work is furnished them—in kitchen, laundry
+and household for the girls, in grounds and
+<span class="pagenum" id="Page_717">717</span>
+garden for the boys—by which they partly pay
+their way. The plan is to have the income from
+the model housing endowment used to pay poor
+students for work done and so provide with an
+education many whom the college is forced now
+to turn away.</p>
+
+<p>The homes, playground and settlement would
+furnish a practical field where young Negro
+women could be trained as social workers in
+order to meet the growing demand from white
+people in several southern states for trained
+Negroes to work among the poor of their own
+race.</p>
+
+
+<p class="p2 footnote"><a id="Footnote_1" href="#FNanchor_1" class="label">[1]</a> The houses would be of wood, as local conditions
+make the expense of brick or cement prohibitive.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>BOYS’ “PETITION FOR INDEPENDENCE”</h4>
+
+<p>A “Petition for Independence,” signed by
+representatives of the boys and girls of Ithaca,
+expresses the principles of the Junior Municipality
+organized in that city the latter part of
+June by William R. George, director of the National
+Association of Junior Republics. The object
+of the “municipality” is the practical training
+of younger citizens in their rights and responsibilities
+by the formation of a government
+of junior officials who shall act in matters of
+the public welfare in co-operation with the city
+officials. Already the mayors of Cortland, N. Y.,
+and Jersey City have asked Mr. George to start
+like organizations.</p>
+
+<div class="blockquot">
+
+<p>“We, the undersigned, being the youth of
+Ithaca, N. Y., between the ages of sixteen and
+twenty-one, do respectfully call to the attention
+of our elders that, although not of age, we
+nevertheless feel we have reached the point
+where we could and should actively participate
+in the government of our city.</p>
+
+<p>“We regard as merely a legal fiction the assumption
+that we are infants in all matters relating
+to the government of the community.</p>
+
+<p>“We respectfully call attention to the fact that
+in time of war boys between the ages of sixteen
+and twenty-one are sent to the front to fight
+for their country and are frequently as officers
+placed in positions of peculiar responsibility and
+danger. Is it not self-evident that if youths
+can thus honorably acquit themselves in time of
+war, they could and should assume the less
+dangerous and onerous responsibilities of
+peace?</p>
+
+<p>“We find in the annals of history that from
+time immemorial youths of our age have, when
+placed in positions of trust, acquitted themselves
+creditably. Before the age of twenty-one Alexander
+the Great was not only the ruler of Macedon,
+but the dominant power in all Greece;
+Charles James Fox became a member of the
+British Parliament before he was of age, and
+the younger Pitt became Prime Minister of
+Great Britain when he had scarcely passed his
+majority. In short, there is abundant evidence
+both in the past and the present that youth can
+and will rise to responsibility when it is placed
+upon them.</p>
+
+<p>“Such being the case, we do hereby resolve
+to accept the suggestion of William R. George,
+the founder of the Junior Republics, and the
+invitations of Mayor Reamer and the Common
+Council and organize ourselves into a Junior
+Municipality in order that we may at once actively
+serve our city as junior citizens and thereby
+prepare ourselves for more efficient citizenship
+as adults.</p>
+
+<p>“We hereby pledge ourselves to assist in the
+enforcement of all the laws and ordinances of
+the city, particularly those directly relating to
+boys and girls and their interests.</p>
+
+<p>“We further pledge ourselves that when elected
+to any office in the Junior Municipality we
+will give our full and faithful co-operation to
+the adult official holding the corresponding office
+in the city government and will discharge our
+duties solely with reference to the welfare of
+the whole city.”</p>
+</div>
+
+<h4 style="display: none; visibility: hidden;">Advertisement</h4>
+<p class="break center "><b>Spare the Slum and Spoil the Child.</b></p>
+<div class="adbox">
+<p>The doctrine of</p>
+
+<p class="center larger">
+INFANT<br>
+DAMNATION<br>
+</p>
+
+<p class="right">
+is thoroughly modern<br>
+</p>
+
+<p class="larger ls">Go look at the
+children who need
+playgrounds and
+you’ll believe it.</p>
+<hr class="short">
+<p class="center">
+How long will Cleveland,<br>
+sixth city, keep this article<br>
+in her city creed?<br>
+</p>
+</div><!--end box-->
+
+<p class="center u"><b>Give them Playgrounds Instead!</b></p>
+<p class="p0 center smaller"><cite>From the Cleveland Humane Society Bulletin</cite>
+</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>WHAT ONE SMALL TOWN IS DOING</h4>
+
+<p>Zona Gale in a pamphlet, Civic Improvement
+in the Little Towns, tells how first the women
+and then the men and women of one small community
+inaugurated an unusually successful campaign
+in the field of public social service. This
+town is described as one of 6,000 inhabitants,
+probably Portage, Wis., where Miss Gale lives.</p>
+
+<p>In her opinion the civic problem of the small
+town is threefold: first to get into touch with
+the current of new understanding that the conservation
+of physical and moral life is largely
+economic; second, to find practical ways of applying
+this understanding to the present and
+future of the town; and third, to do all this with
+exceedingly little money.</p>
+
+<p>The Women’s Club called a meeting at the
+City Hall of all women interested in town development.
+At this meeting the constitution of
+the Wichita, Kan., Improvement Association
+<span class="pagenum" id="Page_718">718</span>
+was adopted and work mapped out for five committees:
+sanitary, educational, art, children’s
+auxiliary, and streets and alleys.</p>
+
+<p>Among the concrete results obtained through
+the work of these committees were the inauguration
+of a system of garbage disposal; the grading
+and planting of a small park at the end of a
+bridge at the turn in a river; the establishment
+of a rest room in the town for farmers’ wives
+from the surrounding country, although owing
+to a misunderstanding permission to use a small
+committee room in the City Hall was revoked
+by the Town Council; the establishment of a
+charity co-ordination committee; a town lecture
+course; public bath houses; a sane Fourth, and
+medical and dental inspection of school children.</p>
+
+
+<div class="chapter">
+<hr>
+<h2 class="no-break">PERSONALS</h2>
+<hr>
+</div>
+
+
+<p class="p2 drop-cap"><span class="smcap">The</span> recent action of Congress and President
+Wilson, under the specific encouragement
+of both railroad managers and employes, in
+placing industrial mediation and arbitration on
+a wider and stronger basis, is a long step toward
+the realization of a definite ideal which
+has been cradled in the mind of Charles P. Neill,
+the former commissioner of labor.</p>
+
+<div class="box">
+<div class="figcenter">
+ <img src="images/i014.jpg"
+ alt="Charles Neill">
+ <p class="caption allsmcap">CHARLES P. NEILL</p>
+</div><!--end figcenter-->
+</div><!--end box-->
+
+<p>Former President Roosevelt discovered Mr.
+Neill. Mr. Neill discovered the Erdman Act,
+which platted a narrow pathway through the
+industrial jungle in the United States. Congress
+put the Erdman Act on the statute books,
+but Charles P. Neill placed it definitely in the
+imagination of the American people and focused
+upon it the hope of the nation for industrial
+peace. It is to Mr. Neill’s credit that he found
+and took advantage of the possibilities of the
+Erdman Act in spite of its limitations.</p>
+
+<p>From 1898, when the Erdman Act was passed,
+to 1906, only a single attempt was made to
+utilize its provisions in industrial warfare. That
+attempt, which was in June, 1899, failed. Mr.
+Neill became commissioner of labor in 1905.
+Within the five years, December, 1906, to January,
+1912, the provisions of the law were invoked
+in nearly 60 interstate commerce disputes.
+Between 1908 and 1912 there was but one period
+as long as three months during which mediation
+was not sought in a railroad dispute. The
+threatened strikes which were averted during
+these five years involved over half a million
+miles of railroad and 163,000 railroad employes.
+These figures include duplicates since the same
+railroad was sometimes involved more than once.</p>
+
+<p>In all this work as mediator Mr. Neill enjoyed
+the unlimited confidence of railroad managers,
+and employes alike. Whatever the bitterness,
+the differences in codes of industrial ethics, and
+the misunderstandings of fact which separated
+into bitter opposition the railroad managers and
+their employes, there was no time when both
+parties failed to give absolute confidence to
+Commissioner Neill and to rely with unquestioning
+trust on his judgment, on his personal character,
+and the practical wisdom of his suggestion.
+This extraordinary tribute to him was
+primarily a tribute to his character, but it was
+earned in part by the marvelous accuracy with
+which his imagination seized situations and all
+their parts, and enabled him to talk the minutely
+technical language of railroad operation.
+The rare assemblage of mental and moral gifts
+which characterize Mr. Neill was fully recognized
+and nothing clouded that recognition during
+his term of service. These extraordinary
+features of his career will offer but little consolation
+to the few lonely critics whose voices
+were recently heard in high circles.</p>
+
+<p>Mr. Neill was made commissioner of labor
+in 1905. He was re-appointed in 1909. His
+third nomination was sent to the Senate by President
+Taft in January, 1913. Confirmation was
+withheld because of the Democratic policy toward
+President Taft’s nominations in general.
+Mr. Neill’s name was sent back to the Senate
+by President Wilson but it was not acted upon
+at the short session. It was again sent to the
+Senate at its extraordinary session. Meantime
+Mr. Neill’s term of office had expired, and on
+February 1 he surrendered his office. Confirmation
+was delayed, apparently because certain
+southern Senators seemed to have views of the
+humanities of industry which were not in accord
+with those of Commissioner Neill. His
+appointment, however, was finally confirmed and
+Mr. Neill resumed his office. After a few weeks
+of service he resigned to take the position of
+director of welfare with the American Smelting
+and Refining Company. He has taken charge
+of the welfare of approximately 20,000 laboring
+men in the employ of this corporation. The
+delay of the confirmation of Mr. Neill’s appointment
+brought forth from the labor press
+generally, from the railroad managers of the
+United States and from the American press
+generally, tributes to his character, to his power,
+and to his achievements which have been rarely
+equaled and more rarely exceeded in the industrial
+history of the nation.</p>
+
+<p>In addition to the annual reports and bulletins
+issued by the Bureau while Mr. Neill was
+commissioner of labor, which publications form
+<span class="pagenum" id="Page_719">719</span>
+a very valuable contribution to the literature
+dealing with labor conditions, the bureau made
+a number of important special investigations
+at the direction of Congress, the results of which
+are embodied in various reports, notable among
+them are the Report of the Condition of Women
+and Child Wage-Earners in the United States
+(in 19 volumes), the Report on the Conditions
+of Employment in the Iron and Steel Industry,
+and the Reports on the Strike at Bethlehem and
+the Strike at Lawrence, Mass. Acting as
+special commissioner under Roosevelt Mr.
+Neill investigated the packing house industry
+and the Goldfield strike. In spite of the handicap
+under which he was placed by his mediation
+work, Mr. Neill gave most careful supervision
+to the planning and the executing of the
+work of the Bureau of Labor, and in many cases
+tested the accuracy and completeness of work
+of his agents by personally inspecting the fields
+in which they labored.</p>
+
+<p>Mr. Neill was born in Rock Island, Illinois,
+in 1865. His college education was obtained at
+Notre Dame University, at the University of
+Texas, at Georgetown, and at Johns Hopkins
+University in Baltimore where he took his
+Ph.D. in 1897. He served as an instructor
+at Notre Dame University from 1891 to 1894.
+He was professor of political economy at the
+Catholic University from 1898 to 1905. While occupying
+this position he prepared and installed
+an exhibit of the Catholic charities of the
+United States at the <abbr title="Saint">St.</abbr> Louis Exposition. He
+was United States commissioner of labor from
+1905 to 1913, vice-president of the Board of
+Charities of the District of Columbia, 1900 to
+1908; assistant recorder of the Anthracite
+Strike Commission in 1902; recorder of the Arbitration
+Board for the Birmingham strike in
+1903; member of the U. S. Immigration Commission,
+1907 to 1910. As member of the International
+Institute of Statistics, he has actively
+furthered plans for the adoption of international
+standards for the compilation of industrial statistics
+and has been active in working toward
+international conventions to promote that end.</p>
+
+<p>Nature, grace and environment conspired to
+prepare Mr. Neill for his work. Ideals governed
+him from his early boyhood and gave him
+the courage to overcome a typical range of obstacles
+in working them out. Everything taught
+Mr. Neill. He had the rare capacity and the
+temperament to profit by experience. His ideals
+of social service and his Christian sympathies
+have been so powerful that nothing frightened
+him and nothing side-tracked him from his path.
+There is no way of knowing fully the pressure
+that was brought to bear upon him, or the dust
+that was stirred up to obscure the practical ideals
+that governed him in his work as an investigator
+of the industrial battlefield. Whether in a
+congressional hearing where a none too kindly
+spirit sometimes cropped out, or in protecting
+the accuracy and good faith of his bureau reports,
+some of which aroused fierce antagonisms
+and were subject to bitter attack, Mr.
+Neill displayed the same intelligent fearlessness,
+the same restrained idealism and the same self
+reliance which his friends have always noted
+and admired in him. He has had severe academic
+training, yet he has remained a thoroughly practical
+man. He is a brave and honest fighter,
+without any love of fighting for its own sake.</p>
+
+<p>A personal feature of Mr. Neill’s career remains
+to be noted. Under the law he, as commissioner
+of labor, was associated with Judge
+Martin A. Knapp in adjusting railway disputes.
+Originally Judge Knapp acted in his capacity
+as chairman of the Interstate Commerce Commission.
+When he was transferred to the Court
+of Commerce a change in the law was made,
+permitting the President to select as second
+mediator any member of the Interstate Commerce
+Commission or of the Commerce Court.
+In this manner it was possible to continue Judge
+Knapp in the mediation work. Fortunately he
+remains to carry into the newer epoch just entered
+upon, the splendid traditions of the work
+as developed by himself and Mr. Neill. These
+two men worked together in a spirit of mutual
+understanding and trust which made their mediation
+work a happy experience for themselves,
+no less than for the railroads and the employes.
+It is impossible to separate them in attributing
+credit for the great results which have been
+achieved. Each has been most gratified when
+the public honored the other. Both will be associated
+in the discriminating memory of the
+nation as precursors of the era of industrial
+peace for which the nation’s heart is longing.</p>
+
+<p class="p0 right r4">
+<span class="smcap"><abbr title="William">Wm.</abbr> J. Kirby.</span><br>
+</p>
+<br>
+<hr class="tb">
+
+<p class="p2 drop-cap"><span class="smcap">Charles Stelzle</span>, pioneer in church social
+service, who was the founder and
+has for ten years been in charge of this phase
+of the work of the Presbyterian Board of
+Home Missions, will leave that board on October
+1. Mr. Stelzle plans to set up offices of his own
+as consulting sociologist and efficiency engineer
+for national church organizations, social service
+agencies and industrial enterprises.</p>
+
+<p>The broader field which he proposes to cover
+on severing his connection with purely denominational
+work Mr. Stelzle outlines as furnishing
+“Expert service with reference to Sociological
+and Religious Surveys; Exhibits; Social Service
+Campaigns and Conferences; Social and Religious
+Work among Immigrant, Industrial, and
+Rural Populations; Publicity, Educational, and
+Evangelistic Campaigns; Efficiency Methods for
+Local Churches and National Organizations;
+General Industrial Problems.”</p>
+
+<div class="box">
+<div class="figcenter">
+ <img src="images/i016.jpg"
+ alt="Charles Stelzle">
+ <p class="caption allsmcap">CHARLES STELZLE</p>
+</div><!--end figcenter-->
+</div><!--end box-->
+
+
+<p>Mr. Stelzle came to the church, when he was
+ordained minister about eighteen years ago, as
+a worker who in his twelve years in the machine
+shop had been made painfully conscious of the
+lack of understanding and co-operation between
+the church and the workingmen. He organized
+the Department of Church and Labor of the
+Presbyterian Church, and this was subsequently
+expanded into the bureau from which he is
+resigning. The Labor Temple in lower Second
+Avenue, New York, a religious labor center
+which he organized a few years ago, has so
+evidently responded to a need that the board has
+recently bought the property and put the temple
+<span class="pagenum" id="Page_720">720</span>
+on a permanent basis. Labor Sunday, a nation-wide
+campaign for temperance carried on
+through the trade unions and a press service on
+social, religious and industrial topics which is
+used by 350 of the principal labor papers, are
+other activities of the bureau. Mr. Stelzle has
+served as arbitrator in many industrial disputes
+and has established a permanent connection between
+the church and organized labor through
+ministerial delegates to the trade unions.</p>
+
+<p>In addition to this industrial work he was for
+a year executive secretary of the Commission
+on Social Service of the Federal Council of
+Churches, had charge of the social service features
+of one of the Men and Religion Forward
+Movement teams and directed the surveys made
+by the movement in seventy cities. He conducted
+the recent publicity campaign for the Home
+Missions Council and the Council of Women
+for Home Missions.</p>
+
+<p>Mr. Stelzle’s successor in the bureau has not
+yet been appointed.</p>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">The</span> appointment of Louis F. Post, founder and
+for fifteen years joint editor with Alice
+Thatcher Post of <cite>The Public</cite> and worker for
+many public causes in Chicago, to the assistant
+secretaryship of the Federal Department of Labor
+has been generally recognized, to use the
+words of a fellow journalist, as something
+more than the dropping of a plum into the gaping
+mouth of a hungry politician. Mr. Post is no
+politician and was by no means hungry for the
+position, which he at first peremptorily refused,
+feeling that he could not give up his work on
+<cite>The Public</cite>. He consented only after pressure
+had been brought to bear upon him from all sides
+and he had been brought to realize that a still
+larger duty called him to the service of the
+nation.</p>
+
+<p>The ideals which animated Mr. Post as editor
+and which he brings to his work in the Department
+of Labor, he thus himself expresses in a
+recent valedictory editorial:</p>
+
+<div class="blockquot">
+
+<p>“In citizenship it has been my object and
+that of my editorial associates through all
+those years, to inculcate a realization of the
+larger citizen, the civic whole, whose voice,
+when conflicting selfishnesses cancel one another,
+is in a very real sense ‘the voice of
+God.’ As single taxers, we have worked
+with the purpose on the one hand of lifting
+single taxers out of a cult and broadening
+them with visions of the ever-pulsating
+world of men wherein their cause must
+flourish if it is ever to fructify, and on the
+other of disclosing to all readers with democratic
+ideals the subtle power of this reform
+in democratizing industry as well as politics.
+With more comprehensive scope we have inculcated
+fundamental democracy as the social
+principle of which every social reform is at
+best but a practical application; and with
+scope still more comprehensive we have
+identified democracy with that element of
+the universal which exhibits the physical
+phenomena of life as product, instead of
+producer, of those faculties which some of
+us call ‘intellectual’ and others ‘spiritual.’”</p>
+</div>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">James Mullenbach’s</span> appointment as
+superintendent of the great Cook County infirmary
+for the poor of Chicago at Oak Forest is
+as creditable to President Alexander A. McCormick
+of the Board of County Commissioners as
+it is to Mr. Mullenbach.</p>
+
+<p>With his experience as settlement resident at
+Chicago Commons, as superintendent of the
+Municipal Lodging House, as assistant superintendent
+of the United Charities, as secretary
+of the Land, Labor, and Immigration Officials’
+Conference, and as the representative of the
+social agencies reporting social legislation at
+the Illinois Legislature, Mr. Mullenbach is regarded
+as the ideal head for the greatest county
+institutions west of New York.</p>
+
+<p>It is significant of the new times to find a
+college educated man who rounded out his professional
+training on a fellowship in a German
+University, being sought for and accepting a
+position, to which only a political appointee has
+hitherto been appointed. No higher token of the
+triumph of patriotism on partisanship has been
+registered in America than this, and many another,
+achievement of Mr. McCormick in rescuing
+the County of Cook from the spoils exploitation
+of his predecessor and in establishing
+the efficient business management and the
+humane social standards of his own administration.</p>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">The</span> recent death of Edna P. Alter in a trolley
+wreck near Pasadena, Cal., removes one of
+the younger workers in the field of organized
+charity. Miss Alter knew every phase of work
+in the homes of the poor for she entered the
+<span class="pagenum" id="Page_721">721</span>
+Hudson district of the New York Charity Organization
+Society as district nurse in 1908, later
+rounded out her preparation for the work of
+organized charity by a summer course in the
+New York School of Philanthropy, and became
+assistant agent in that district. In the fall of
+1910 she rose to the responsible position of secretary
+of the Associated Charities of Pasadena.</p>
+
+<p>Leo G. MacLaughlin, president of that society,
+speaks of her work as “sympathetic, kindly,
+warm-hearted and keenly intelligent. She was
+one of the founders of the local Associated
+Charities and her work won favorable attention
+over a wide area.”</p>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">A few</span> years of school dental clinics have
+made “toothbrush drills” a fairly familiar
+idea in many cities. It took the Toronto public
+nurses, or rather their supervisor, Lina L. Rogers,
+to originate another drill quite as unique
+and important.</p>
+
+<p>Since last October the school children of
+Toronto, in squads of twenty have practised
+daily “nose-blowing drills” and the effect on the
+freshness of the atmosphere of the schoolrooms
+has been so noticeable that the teachers have become
+assiduous in seeing to it that no child
+comes to school unprovided with a pocket handkerchief.
+They often, indeed, themselves order
+the drills without waiting for the coming of the
+nurse. The effect of the drill is perceptible already
+on individual children, in cases of catarrh,
+and the doctors predict that it will have an
+appreciable effect in time in lessening adenoids
+and other throat and nose affections.</p>
+
+<p>It was Miss Rogers, who has recently become
+Mrs. W. E. Struthers, who, when a nurse at the
+Henry Street Settlement in New York in 1902
+was chosen to demonstrate at the expense of
+the settlement in four local schools the need of
+municipal school nurses. This she did with such
+success that within a month the Department of
+Health took over the financial responsibility and
+extended the work, making her supervisor.</p>
+
+<p>With a subsequent seven years’ experience in
+this capacity she went to Toronto in 1909, where
+she has done pioneer health work in the schools.
+These are now fully equipped with school nurses
+and with dental care, one of the four clinics
+now carried on in connection with the school
+system having been equipped with a model outfit
+at the expense of the enthusiastic nurses
+themselves.</p>
+
+<div class="box">
+<div class="figcenter">
+ <img src="images/i017.jpg"
+ alt="Mrs. Struthers">
+ <p class="caption allsmcap">MRS. W. E. STRUTHERS</p>
+</div><!--end figcenter-->
+</div><!--end box-->
+
+<p>Besides nose-blowing drills Toronto has undertaken
+another departure in school health work,
+in establishing a real open-air school, on the
+model of the Forest School at Charlottenberg
+in Germany. To a private park on the outskirts
+of Toronto, which has been loaned for this purpose
+and equipped with shacks, fifty anaemic or
+delicate children were taken for three months last
+winter by special trolley cars each morning and
+not returned till twelve hours later, thus living
+and learning in the open air. No tubercular children
+were taken, sanatorium care being provided
+for them. Five meals are furnished, the trolley
+service is given free by the street railway company,
+a nurse is in attendance and three teachers,
+lessons are given for three and one-half hours
+in the open air. There is a great deal of outdoor
+play, and nose-blowing and toothbrush drills
+and a weekly bath form part of this school course,
+as well as a two-hour nap each day. The experiment
+has been so successful that the number of
+children will be increased next year to one hundred
+and the school term lengthened to six
+months.</p>
+
+<p>As wife of Dr. W. E. Struthers, chief medical
+inspector of the schools, Mrs. Struthers will continue
+her interest in the physical care of school
+children. She will also have the direction of the
+work until her successor, not yet appointed, is
+broken in.</p>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">To</span> make charity administration measure up
+to strict tests of business efficiency—this has
+been the ideal that Howell Wright has put in
+practice as superintendent of the Cleveland Associated
+Charities. He has succeeded so well that
+Mayor Baker has recently appointed him superintendent
+of the City Hospital, with instructions
+to use the same methods there.</p>
+
+<p>Mr. Wright has no medical training. He is a
+social worker with a business twist. His new
+<span class="pagenum" id="Page_722">722</span>
+appointment illustrates the growing tendency today
+to put at the head of great specialized institutions,
+men who have a broad social outlook
+combined with executive power, but minus specialized
+training.</p>
+
+<div class="box">
+<div class="figcenter">
+ <img src="images/i018.jpg"
+ alt="HOWELL WRIGHT">
+ <p class="caption allsmcap">HOWELL WRIGHT</p>
+</div><!--end figcenter-->
+</div><!--end box-->
+
+<p>The City Hospital has been a bit too professional
+in the past. It has looked very closely
+to its diagnosis and temperature charts and instruments.
+But almost no thought has been
+given to the human and social background of its
+patients, and patients “cured” of physical ills
+have been turned out with all their social ills
+still festering, the inevitable result being that
+they speedily returned to the City Hospital to
+be “cured” again.</p>
+
+<p>The hope is that Mr. Wright will make of the
+City Hospital a social institution, looking backward
+and forward into causes and effects.</p>
+
+<p>Since Mr. Wright received his master’s degree
+from Yale University in 1907 he has served as
+special agent of the Massachusetts S. P. C. C.
+and as general secretary of the Norwood Civic
+Association. During the past year as superintendent
+of the Cleveland Associated Charities
+his chief move has been the abandonment of the
+general employment bureau for the unskilled,
+which had been conducted by the Associated
+Charities since 1886. After a searching study
+of the charitable field and a special study of such
+bureaus in other places it was decided to transfer
+this work to the State Employment Bureau
+in the city and the experiment has so far justified
+itself. Mr. Wright’s service has also been
+notable in bringing into use simple records, centralized
+purchasing and smoothly systematic office
+methods.</p>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">Sidney B. Bock</span>, acting head resident of
+Pillsbury Settlement House, Minneapolis,
+has been elected head resident of Neighborhood
+House in Detroit, Michigan. This settlement is
+just completing a new building, having been in
+rented quarters since its founding in 1909.</p>
+
+<hr class="tb">
+
+<p class="drop-cap"><span class="smcap">Berkeley G. Tobey</span>, until recently secretary
+of the National Council Boy Scouts
+of America, has become business manager of
+the Masses Publishing Company.</p>
+
+
+<div class="chapter">
+<hr>
+<h2 class="no-break">COMMUNICATIONS</h2>
+<hr>
+</div>
+
+<h4>VOCATIONAL SCHOOLS</h4>
+
+<p class="unindent"><span class="smcap">To the Editor</span>:</p>
+
+
+<p>Recently the writer noticed several communications
+in <span class="smcap">The Survey</span>, in reference to the proposition
+of establishing a separate system of vocational
+schools, distinct from the existing
+traditional public school system.</p>
+
+<p>As a reason for the establishment of this so-called
+“dual” system of vocational education the
+claim is advanced that, since manual training
+had been emasculated by being in contact with
+the public school, so likewise would vocational
+and industrial education be emasculated if these
+forms of education were to be carried on side by
+side with the other schools under the old organization.</p>
+
+<p>The writer having seen the retarding effects
+of such a “dual” system in one of our larger
+industrial cities, and Massachusetts having tried
+and abandoned it, and since the writer is firmly
+convinced that such a divided system of education
+will, before long, react injuriously upon
+the social and ethical life of a state and her
+communities, and will plague the industries with
+its uneconomic and unsocial consequences, he is
+decidedly opposed to such a separated system
+of vocational schools.</p>
+
+<p>It is a shrewd move to get entire control of
+the education of the masses of industrial workers,
+a mentally narrowing, mind killing education
+which, in its effects, would pull the intelligence
+of a community down to a lower level, being
+re-enforced by the ossifying influences of extreme
+specialization, which are noticeable in
+shop, store and office in all our industrial centers
+even now.</p>
+
+<p>Manufacturers and business men do not take
+kindly to the idea that they should be made
+responsible for the mental, moral and aesthetic
+development of their employes and under these
+circumstances industrial education would soon
+degenerate into a feudal appendage of our industrial
+system. Manufacturers, corporations
+and business men are certainly entitled to a share
+in the management of our educational system
+and industrial schools and it is highly desirable
+that they should claim their share.</p>
+
+<p>But they can accomplish all they need either
+<span class="pagenum" id="Page_723">723</span>
+as members of school boards, or as advisory
+committees on industrial education.</p>
+
+<p>As to the danger of vocational schools being
+emasculated there is no such danger. No one
+who understands anything about the matter expects
+to have vocational or industrial schools
+articulated with the elementary or high schools
+in the manner manual training has been and is
+articulated, but have these lower schools separate
+in just the same manner as manual training
+high schools or technical high schools are
+separate from the academic schools, yet are
+under the same organization and management
+without any detriment to their usefulness.</p>
+
+<p>It is true that, if specific industrial education
+is yoked together with academic education in
+the high school, industrial education will be
+emasculated. But then it is due to a managerial
+blunder of trying to straddle two horses and
+there is no excuse to make such a managerial
+mistake the pretext for the creation of an expensive
+separate system of education. Manual
+training, as we understand it, was never emasculated
+because neither by the originators, and
+the writer is one of them, nor subsequently,
+was manual training in the elementary and high
+school considered anything else but an adjunct
+to academic schools for cultural purposes and
+down to the N. E. A. meeting at Boston in
+1903, Professor Woodward, the father of the
+American system of manual training, disclaimed
+any other but cultural purpose for manual training,
+without any distinct vocational aim.</p>
+
+<p>At the above meeting Dean Woodward, in referring
+to the manual training work done at
+<abbr title="Saint">St.</abbr> Louis said: “The secondary school should
+enable a boy to discover the world and find himself.
+I use the word ‘discover’ in the sense
+of uncover—that is lay bare—the problems, the
+demands, the opportunities, the possibilities of
+the eternal world. A boy finds himself when he
+has taken a correct inventory of his inherited
+and acquired tastes and capacities”. While many
+friends of manual training were disappointed in
+finding it did not revolutionize trade education,
+it never intended to do that and therefore was
+not emasculated.</p>
+
+<p class="p0 right r4">
+<span class="smcap">Paul Kreuzpointner.</span><br>
+</p>
+
+<p class="p0 center">
+[Chairman Committee on Industrial Education, American<br>
+Foundryman’s Association.]<br>
+</p>
+
+<p class="p0">Altoona, Pa.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>THE I. W. W.: AN OUTLAW ORGANIZATION</h4>
+
+<p class="unindent"><span class="smcap">To the Editor</span>:</p>
+
+<p>I wish to express my hearty appreciation of
+John A. Fitch’s article in <span class="smcap">The Survey</span> of June 7,
+on the I. W. W. It is illuminative. The I. W.
+W. is the one organization that is both hated and
+feared by our most eminent leaders in business,
+politics, and religion. There are good reasons
+for this. The I. W. W. pays no homage to heroes
+and great men of the past; it has little respect
+for the laws of the land, because it believes these
+laws were made to keep them in bondage; and it
+entirely ignores and repudiates the church, as it
+holds that the church has always been an instrument
+to keep the people in ignorance and subjection.</p>
+
+<p>Small wonder it is that this “outlaw” organization
+receives the contempt and anathemas of
+conventional, respectable people, who have been
+taught that everything that makes civilization
+better than barbarism, is due to the genius and
+greatness and goodness of a few men, who in
+turn were but the instruments of Providence.
+The I. W. W. tells its members to stop bowing
+the head and the knee to great men and even to
+God, and to assert the right and power that is
+theirs, and to depend on themselves alone for
+the establishment of a new system of industry.</p>
+
+<p>Sound and staid business, political and religious
+leaders are deeply concerned with what
+seems to be the trend of thought and action on
+the part of the “lower” classes. This trend appears
+to be decidedly in the direction of the
+very principles and methods of the I. W. W.
+The “better” class of people believe chaos and
+anarchy will result if the principles and
+practices of the I. W. W. predominate; the I.
+W.W. believe they will always be oppressed,
+and matters go from bad to worse, if our method
+of doing business is not fundamentally
+changed. They believe so fully in the justice of
+their cause that they willingly accept the scorn,
+the contempt, the inhuman treatment inflicted on
+them in jail and out, that is meted out mercilessly
+for their uncompromising speech and attitude.</p>
+
+<p>This bitter feeling of the “best” people toward
+the I. W. W., and the dogged persistence of the
+I. W. W. in their revolutionary tactics, constitute
+the most acute phase of what the Socialists
+call the class struggle. This class war will continue
+till one side or the other is victorious. One
+reason that the whole matter is so generally misunderstood
+is that nearly all the newspapers distort
+and suppress most of the news concerning
+the activity of the I. W. W.</p>
+
+<p>Mr. Fitch’s article radiates light rather than
+heat.</p>
+
+<p class="p0 right r4">
+<span class="smcap">A. E. House.</span><br>
+</p>
+
+<p class="p0">Spokane, Wash.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>RIGHT IDEAS ON INDUSTRIAL RELATIONS</h4>
+
+<p class="unindent"><span class="smcap">To the Editor</span>:</p>
+
+<p>I have read the various contributions to your
+symposium on the work before the new Commission
+on Industrial Relations. In my opinion
+it is the duty of the employer to provide the
+necessary safeguards and protection for his employes,
+such for instance as good light and air,
+sanitary surroundings, protection against fire
+and other dangers, reasonable hours of labor,
+adequate wages, no child labor, facilities for
+education and self-improvement, healthful living
+quarters, opportunity for recreation, etc.
+These and other advantages should be supplied
+under all circumstances, and there should be co-operation
+and good feeling between employer
+and workingman. It seems to me quite probable
+that the better results which would thus be obtained
+through the greater efficiency of the employes
+would more than compensate the employer
+for any extra outlays which he may have
+to make to provide such protection, so that in
+the end it would cost him nothing. The hearty
+co-operation and friendly spirit which would
+thus be engendered between the employer and
+his workingmen would be apt to prevent strikes
+<span class="pagenum" id="Page_724">724</span>
+and other troubles and would decidedly be to
+the interest of both employer and employe. Any
+excuse that a manufacturer or other employer
+of labor might make that if he had to provide
+this protection to his employes he could not
+make his business pay seems to me similar to
+the excuse of one who contemplates putting up
+a building but says he cannot afford to make
+the necessary expenditures to provide for the
+safety of those who will occupy it because with
+such extra cost the income from the building
+would not be sufficient to pay a good interest.
+If he cannot make it pay he should of course
+not undertake it, but under all circumstances he
+must build safely. In the same way an employer
+should see that his employes and workmen
+receive the necessary protection and he
+should provide for their absolute safety and do
+the right thing by them all the time.</p>
+
+<p class="right r4">
+<span class="smcap">Adolph Lewisohn.</span><br>
+</p>
+
+<p class="p0 right small">
+[President General Development Company.]<br>
+</p>
+
+<p class="p0">New York.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>ALCOHOLISM</h4>
+
+<p class="unindent"><span class="smcap">To the Editor</span>:</p>
+
+<p>I am greatly pleased to see on the cover page
+of <span class="smcap">The Survey</span> issue of August 9, a copy of
+the first Municipal Poster against Alcoholism
+in the United States. I have wondered
+in reading <span class="smcap">The Survey</span>, that so very much
+attention was given to different phases of
+welfare by excellent writers, and the subject of
+liquor business was not emphasized. It is conceded
+to be the greatest economic problem of
+the age, and is the cause of the need of charity
+organizations, police courts, etc. It is estimated
+by scientific and prison boards that 75 per cent
+of the insane, and a greater per cent of criminals,
+and defectives are now at the mercy of the tax
+payers of the country as a result of liquor
+drinking, and liquor heredity. Certainly with
+such a preponderance of evidence against, and
+interest in, the subject of alcohol, it makes us
+rejoice that <span class="smcap">The Survey</span> has decided to give a
+front page to the publicity of municipality interest
+in this subject.</p>
+
+<p class="right r4">
+<span class="smcap">Luella F. Mc Whurter.</span><br>
+</p>
+
+<p class="p0 right small">
+[President Indiana Federation of Clubs.]<br>
+</p>
+
+<p class="p0">Indianapolis.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<h4>BIBLE STORY FILMS</h4>
+
+<p class="unindent"><span class="smcap">To the Editor</span>:</p>
+
+<p>While I was staying at Hull House, I saw in
+their theater a moving picture of the life of
+Moses. The dial of time turned back, we all became
+spectators of the events of that great life,
+almost as though we had been his contemporaries.
+From the basket in the river to Sinai
+and the golden calf, it was all there, vivid, true
+to the Bible story and reverent in tone. I left
+the theater with much the same feeling as though
+I had heard a great oratorio, and even today the
+picture which ran its course in fifteen minutes
+is more vivid than the story which I have read
+and taught from childhood.</p>
+
+<p>At a lecture in the University of Chicago last
+summer, the pastor of a Congregational Church
+in Madison, Wisconsin, came to me and said that
+he would like to put the moving picture into his
+Sunday School room, if I could tell him where
+he could get the films. All that I could say was
+to get in touch with the film companies and endeavor
+to get the ones that he wanted, but I
+knew that he would have trouble.</p>
+
+<p>There are a considerable number of churches
+that have already introduced the moving picture
+into their evening service or their Sunday School.
+But the difficulty is the same everywhere, it is
+hard to get films that are suitable. Undoubtedly
+all the Bible stories can be taught more effectively
+through the moving picture than in any other
+way. The church ought to teach its lessons by
+the most effective means at hand, and many
+churches would be using the moving picture if
+they could secure suitable films at a reasonable
+rate. Mr. Edison has already made a good beginning
+on a series of films to illustrate the work
+of the public school.</p>
+
+<p>Inasmuch as the churches need a special type
+of films, why should not the church federations
+ask the film companies to produce films of this
+type and start a church exchange? The churches
+should indicate which pictures they wanted
+and furnish Bible experts to supervise the making
+of the films, so as to secure an accurate and
+reverent reproduction of the stories. These films
+might then go out with the approval of the
+federation like a Sunday School lesson leaf. The
+film companies would be merely the printers of
+the material furnished them by the federation.</p>
+
+<p>Besides the Bible stories the great morality
+and passion plays, like Oberammergau, might well
+be given, and representations of the great social
+movements, such as recreation, child labor, tuberculosis,
+and the like, the films for which are
+largely available at the present time.</p>
+
+<h4 style="display: none; visibility: hidden;">Advertisement</h4>
+<div class="p2 adbox small">
+<p class="center">
+<b>HOUSES SUPPLYING<br>
+INSTITUTIONAL TRADE</b>
+</p>
+<hr>
+<p class="unindent"><b>China and Glass.</b></p>
+
+<p class="p0 center">JAMES M. SHAW &amp; <abbr title="Company">CO.</abbr>,<br>
+25 Duane <abbr title="Street">St.</abbr>, New York<br>
+</p>
+<hr>
+<p class="unindent"><b>Ready to Wear Garments.</b></p>
+
+<p class="p0 center">For Men, Women and Children—Wholesale<br>
+BROADWAY BARGAIN HOUSE,<br>
+676 Broadway, New York City<br>
+</p>
+<hr>
+<p class="unindent"><b>Dry Goods.</b></p>
+
+<p class="p0 center">FREDERICK LOESER &amp; <abbr title="Company">CO.</abbr>,<br>
+484 FULTON STREET, BROOKLYN, N. Y.<br>
+</p>
+<hr>
+<p class="unindent"><b>Newspaper Clippings.</b></p>
+
+<p class="p0 center">HENRY ROMEIKE,<br>
+110-112 West 26th Street, New York<br>
+</p>
+<hr>
+<p class="unindent"><b>House Furnishing Goods.</b></p>
+
+<p class="p0 center">C. H. &amp; E. S. GOLDBERG,<br>
+West Broadway and Hudson Street, New York<br>
+</p>
+<hr>
+<p class="unindent"><b>Hardware, Tools and Supplies.</b></p>
+
+<p class="p0 center">HAMMACHER, SCHLEMMER &amp; <abbr title="Company">CO.</abbr>,<br>
+Fourth Ave., Thirteenth <abbr title="Street">St.</abbr>, New York<br>
+</p>
+<hr>
+<p class="unindent"><b>Groceries.</b></p>
+
+<p class="p0 center">SEEMAN <abbr title="Brothers">BROS.</abbr>,<br>
+Hudson and North Moore <abbr title="Streets">Sts.</abbr>, New York<br>
+</p>
+<hr>
+<p class="unindent"><b>All Hospital Supplies.</b></p>
+
+<p class="p0 center">SCHIEFFELIN &amp; <abbr title="Company">CO.</abbr>,<br>
+170 William <abbr title="Street">St.</abbr> New York<br>
+</p>
+<hr>
+<p class="unindent"><b>Ideal Window Ventilators.</b></p>
+
+<p class="p0 center">IDEAL VENTILATOR <abbr title="Company">CO.</abbr>,<br>
+120 Liberty <abbr title="Street">St.</abbr> New York<br>
+</p>
+<hr>
+<p class="unindent"><b>Electrical Engineers and Contractors.</b></p>
+
+<p class="p0 center">BATEMAN &amp; MILLER,<br>
+East 23d Street, New York City<br>
+</p>
+</div><!--end box-->
+
+
+<div class="chapter">
+<h3>Transcriber’s Note</h3>
+</div>
+
+<p>Words may have multiple spelling variations or inconsistent hyphenation
+in the text. These were left unchanged. Dialect, obsolete
+and alternative spellings were left unchanged.</p>
+
+<p>A dozen misspelled words
+were corrected. One duplicated word was removed. Footnote was
+moved to the end of the article.
+Final stops missing at the end of sentences and abbreviations were
+added.
+</p>
+
+</body>
+</html>
